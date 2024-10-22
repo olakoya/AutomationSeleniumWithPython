@@ -32,3 +32,9 @@
 # Chaining of relational operators is possible
 print(10<20<30<40>50)
 # If at least one comparison returns False then the result
+
+# Equality operators always performs content comparison
+
+x = 5
+x == 10 # comparing 5 and 10
+x != 10
