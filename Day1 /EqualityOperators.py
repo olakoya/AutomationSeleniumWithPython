@@ -1,8 +1,8 @@
-# print (10==20)
-# print (10!=20)
-# print (10==True)
-# print (False==False)
-# print ("John"=="John")
+print (10==20)
+print (10!=20)
+print (10==True)
+print (False==False)
+print ("John"=="John")
 
 # Operator Type : Equality Operators
 # Operators and Descriptions: 
@@ -13,9 +13,9 @@
 # Chaining concept is applicable for equality operators. If at least one comparison returns False then the results is False.
 # Otherwise it is True.
 
-# x = 5
-# x == 10
-# x != 10
+x = 5
+x == 10
+x != 10
 
 print(10==20==30==40)
 print(10==10==10==40)
