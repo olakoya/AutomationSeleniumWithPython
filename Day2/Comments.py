@@ -33,9 +33,3 @@ Simple python program
 Simple python program
 Comments are ignored in these 3 double or single quotes
 '''
-"""
-Identifiers
-
-A name in pyhton is called Identifiers
-Class name or Function Name or Method Name or Variable Name or Module Name or Package Name
-"""

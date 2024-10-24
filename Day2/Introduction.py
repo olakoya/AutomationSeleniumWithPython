@@ -1,3 +1,4 @@
+print("Welcome back Ola .. This is refreshing my Python knowledge")
 # Introduction to Python - 1
 # --------------------------
 # Python is general purpose high level Programming language
