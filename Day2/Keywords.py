@@ -12,11 +12,13 @@ import keyword # keywords are nothing but modules
 
 print(keyword.kwlist) # keyword retuned list of keyword(kw)
 
-# Output (['False', 'None', 'True', 'and', 'as', 'assert', 'async', 'await', 'break', 
-#  'class', 'continue', 'def', 'del', 'elif', 'else', 'except', 'finally', 
-#  'for', 'from', 'global', 'if', 'import', 'in', 'is', 'lambda', 'nonlocal', 
-#  'not', 'or', 'pass', 'raise', 'return', 'try', 'while', 'with', 'yield']
-# )
+'''
+Output (['False', 'None', 'True', 'and', 'as', 'assert', 'async', 'await', 'break', 
+ 'class', 'continue', 'def', 'del', 'elif', 'else', 'except', 'finally', 
+ 'for', 'from', 'global', 'if', 'import', 'in', 'is', 'lambda', 'nonlocal', 
+ 'not', 'or', 'pass', 'raise', 'return', 'try', 'while', 'with', 'yield']
+)
+'''
 
 '''
 The execution returned me a list of data structure. 
