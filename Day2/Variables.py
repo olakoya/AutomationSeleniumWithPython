@@ -60,10 +60,10 @@ Unbind means ==> cannot be reversed. After deletion, trying to access the variab
 Python has automatic memory management, and variables are typically cleaned up by the garbage collector when they are no longer referenced.
 E.g
 '''
-# a = 100
-# print(a)
-# del a
-# print(a) # NameError
+a = 100
+print(a)
+del a
+print(a) # NameError
 
 '''
 Output is
