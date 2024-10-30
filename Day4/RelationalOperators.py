@@ -1,5 +1,5 @@
-a = 10 # intgers
-b = 2
+a = 10 # a is an assignment operator for 10
+b = 2 # b is an assignment operator for 2
 
 print(a>b) # Output is True
 print(a<b) # Output is False
@@ -39,10 +39,11 @@ print(10>"True") # Output is TypeError because '>' not supported between instanc
 # The above scripts is doing comparision between integers, strings and boolean datatypes
 
 # Chaining of relational operators is possible
-print(10<20<30<40>50) # this is using relational operators but between different values which is called chaining
+print(10<20<30<40>50) # Output is False because 40 isn't greater than 50
+# this is using relational operators but between different values which is called chaining
 # Any operators can be used for Chaining. It can be either Equality or Comparision operators.
 # Equality always performs content comparison
 # If at least one comparison returns False then the result
-x = 5
-x == 10 # comparing 5 and 10
-x != 10
+x = 5 # equals 5
+x == 10 # this is comparing the content ie. 5 and 10
+x != 10 # not equal to 10

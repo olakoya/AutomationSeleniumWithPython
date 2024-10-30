@@ -1,8 +1,9 @@
-print (10==20)
-print (10!=20)
-print (10==True)
-print (False==False)
-print ("John"=="John")
+print (10==20) # Output is False, which means a false boolean value 
+print (10!=20) # Output is True, which means a true boolean value 
+print (10==True) # Output is False, which means a false boolean value 
+print (False==False) # Output is True, which means a true boolean value
+print ("John"=="John") # Output is True, which means a true boolean value
+# The above are comparing the content if they're equal, and this is called equality operators
 
 # Operator Type : Equality Operators
 # Operators and Descriptions: 
@@ -17,8 +18,8 @@ x = 5
 x == 10
 x != 10
 
-print(10==20==30==40)
-print(10==10==10==40)
+print(10==20==30==40) # Output is False, which means a false boolean value 
+print(10==10==10==40) # Output is False, which means a false boolean value 
 
 # Operator Type: Logical Operators
 # Opeartors: and, or , not (not is just a compliment)
@@ -36,7 +37,7 @@ print(10==10==10==40)
 #       not (!=) => Complement is if one arguement is False it's False
 
 # For Non Boolean Data Types
-#      0 means False
+#       0 means False
 #       non-zero means True
 #       empty string is always treated as False
 #  E.g x and y
