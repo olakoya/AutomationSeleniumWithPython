@@ -1,5 +1,5 @@
 # Bitwise Operators
-# If we operate an oeprator bit by bit it's called Bitwise Operators
+# If we operate an operator bit by bit it's called Bitwise Operators
 # These operators are applicable for int and boolean types only. 
 # For any other data types we will get error ie strings or float etc will give error
 
@@ -19,3 +19,27 @@ print(f"Bitwise XOR (a ^ b): {a ^ b}") # Result: 14 (binary: 1110)
 print(f"Bitwise NOT (a ~ b): {~a}") # Result: -11 (binary: ~1010 = 0101 => -11 in two's complement)
 print(f"Left Shift (a << 1): {a << 1}") # Result: 20 (binary: 10100)
 print(f"Left Shift (a >> 1): {a >> 1}") # Result: 5 (binary: 0101)
+'''
+Output
+Bitwise AND (a & b): 0
+Bitwise OR (a | b): 14
+Bitwise XOR (a ^ b): 14
+Bitwise NOT (a ~ b): -11
+Left Shift (a << 1): 20
+Left Shift (a >> 1): 5
+'''
+"""
+In binary 
+2^3 = 8
+2^2 = 4
+2^1 = 2
+2^0 = 1
+Therefore,
+10 in binary of 8 4 2 1 is 1010
+4 in nibary of 8 4 2 1 is 0100
+
+AND in binary of 8 4 2 1 is 0000 equals 0
+OR in binary of 8 4 2 1 is 1110 equals 14 i.e 8+4+2 = 14
+XOR in binary of 8 4 2 1 is 1110 equals 14 i.e 8+4+2 = 14
+~10 
+"""

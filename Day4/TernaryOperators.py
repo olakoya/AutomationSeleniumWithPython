@@ -1,5 +1,6 @@
 # Ternary Operators returns sysntax values i.e.
 # What it does is that based on condition it returns value
+
 # syntax
 #   x is a value
 #   x = if firstValue is condition else return secondValue
@@ -43,10 +44,11 @@ print(a+b) # Output is total number after adding the 1st and 2nd nos entered whe
 # To check minimum and maximum numbers what to do is 
 # syntax ==> x = firstValue is condition else secondValue
 # E.g
-x = a if a<b else b
+x = a if a<b else b         # one needs to modify the value for the conditon
 print("minimum value is ", x) 
-y = a if a>b else b
+y = a if a>b else b         # if the condition is not true it will return the second value
 print("maximum value is ", y) 
+# Only the condition we are specifying. And it is conditioned using Ternary operators
 '''
 Output for the above script
 Enter First number = 90
