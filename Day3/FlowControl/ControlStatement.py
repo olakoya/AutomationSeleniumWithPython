@@ -78,6 +78,6 @@ else part is always optional hence, the following are various possible syntaxes
         if-else
         if-elif-else
         if-elif
-        The above are 4 types of the if conditional statement.
+The above are 4 types of the if conditional statement.
 There is no switch statement in Python
 '''
