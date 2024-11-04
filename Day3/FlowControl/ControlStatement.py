@@ -33,11 +33,51 @@ There are different types of Conditional Statments and examples are;
 Based on some conditions you perform some actions and those actions are powerful statements
 Logical conditions or expressions will return a boolean value when performed
 
-if or simple if
-----------------
+if or simple if statement
+-------------------------
 if condition (is True): (you need to perform an action)
 Action can be a statement
 We can have multiple statements e.g statment 1, statement 2, statement 3 etc. and they are simply group together 
 if condition is True statement it will be executed inside the "if or simple if" statement otherwise it won't be executed
 for every ststement in python
+
+
+if-else statement requires mutiple actions
+------------------
+if condition:
+    Action-1
+else:
+Action-2
+'''
+
+'''
+To specify multiple conditions we go for;
+
+if-elif-else statement
+----------------------
+if condition-1: is True
+    Action-1 will be executed
+else condition-2:
+    Action-2 will be executed    
+elif condition-3:
+    Action-3 will be executed
+else: 
+    Default Action (i.e if the other first "if and else" statments are not true)
+
+In Java we can switch statement but not in Python hence using thr above "if" statements
+
+else plug is always optional and based on 
+
+'''
+'''
+nested if-else statement
+-------------------------
+
+else part is always optional hence, the following are various possible syntaxes
+        if
+        if-else
+        if-elif-else
+        if-elif
+        The above are 4 types of the if conditional statement.
+There is no switch statement in Python
 '''
