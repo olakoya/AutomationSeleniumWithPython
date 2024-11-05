@@ -81,3 +81,20 @@ else part is always optional hence, the following are various possible syntaxes
 The above are 4 types of the if conditional statement.
 There is no switch statement in Python
 '''
+'''
+Iterative or Looping Statements
+--------------------------------
+If we want to execute some statments multiple times ie. looping or executing the statments multiple times
+It could be either
+1. while loop
+2. for loop
+
+while loop statements
+----------------------
+If we want to execute of a group of statments in a loop until some condition is false
+Syntax for using while loop is
+    1. Initialiazation ==> start value
+    2. Condition 
+    3. Incremwnt/Decrement
+Without the above 3 it's impossible to execute loop statement
+'''
