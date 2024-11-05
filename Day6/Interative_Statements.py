@@ -45,17 +45,17 @@ Output is
 # display sum of first n number
 #--------------------------------
 # n is a dynamic number and can be converted into interger
-n = int(input("Enter Number : ")) # 5 "input("Enter Number : ")" any number enter into "input" will be treated as string datatype 
+# n = int(input("Enter Number : ")) # 5 "input("Enter Number : ")" any number enter into "input" will be treated as string datatype 
 # however, to convert ithe string into integer "int" is added to the code "int(input("Enter Number : "))"" 
 # adding "n" is to store a number to and it is added to the line of code i.e. "n = int(input("Enter Number : "))""
 
-# To solve the above problem i.e. the n line of code we need to use a while loop and number can be 0
-sum = 0 # sum isn't initialiazation but a variable where the numbers will be stored
-i = 1 # initialisation (1 is where the number start counting from) and to specify the condition "while loop" is used
-while i<=n: # condition i value increases = 1 2 3 4 5 6
-    sum = sum+i # i value add data 1 3 6 10 15
-    i = i+1 # increment #i = 2 3 4 5 6
-print(sum)
+# # To solve the above problem i.e. the n line of code we need to use a while loop and number can be 0
+# sum = 0 # sum isn't initialiazation but a variable where the numbers will be stored
+# i = 1 # initialisation (1 is where the number start counting from) and to specify the condition "while loop" is used
+# while i<=n: # condition i value increases = 1 2 3 4 5 6
+#     sum = sum+i # i value add data 1 3 6 10 15
+#     i = i+1 # increment #i = 2 3 4 5 6
+# print(sum)
 '''
 Output 1
 Enter Number : 5
@@ -65,5 +65,33 @@ Enter Number : 10
 55
 Output 3
 Enter Number : 100
-5050
+5050 # total number of the 1 to 100 numbers
+'''
+
+#prompt user to enter name until entering Neel
+#----------------------------------------------
+# We implement this by using while loop statements
+# We need to have name variable
+# Neel is a requirements name
+# To promtp user to add name and we need to have condition 
+name = " " # name has an empty variable " "
+while name!="Neel": # This is condition "is not" 
+    name = input("Enter Name = ") # prompting of variable
+'''
+Output is
+Enter Name = Ola
+Enter Name = MK
+Enter Name = Angel
+Enter Name = Neel
+'''
+# Adding simple message
+print("Thanks for confirming")
+'''
+Output is
+Enter Name = Pj
+Enter Name = Mk
+Enter Name = Pujab
+Enter Name = Rishi
+Enter Name = Neel
+Thanks for confirming
 '''
