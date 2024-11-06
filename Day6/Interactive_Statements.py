@@ -1,3 +1,4 @@
+# For notes to support the below codes, check Day 3 ControlStatement File
 # while loop
 # print numbers from 1 to 10
 #-----------------------------
