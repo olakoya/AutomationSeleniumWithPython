@@ -113,4 +113,11 @@ form - 3 ==> range(start,stop, step)
 
 start and step parameters are always optional
 Once can specify steps it generate sequece of numbers
+
+Step value always decised difference between 2 consecutive numbers
+Default value of step is 1
+
+Step ==> positive ==> forward direction ==> L to R ==> stop or end - 1
+Step ==> negative ==> reverse direction ==> R to L ==> stop or end + 1
+
 '''
