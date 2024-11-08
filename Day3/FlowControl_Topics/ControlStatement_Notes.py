@@ -105,20 +105,20 @@ Without the above 3 it's impossible to execute loop statement
 '''
 For Loop (Examples are located in Day 7 Range_Function.py file)
 --------
-Is a range of functions and it's a sequence of numbers
-Once you specify some values it will generates sequence of numbers by considering start value and by not considering end value
+Loop is a range of functions and it's a sequence of numbers.
+Once you specify some values it will generates sequence of numbers by considering 'start' value and by not considering 'end' value
 E.g
 form - 1 ==> range(stop)
 form - 2 ==> range(start,stop)
 form - 3 ==> range(start,stop, step)
 
-start and step parameters are always optional
-Once can specify steps it generate sequece of numbers
+start and step parameters are always optional.
+One can specify steps if it generates sequece of numbers.
 
-Step value always decised difference between 2 consecutive numbers
+Step value always decides the difference between 2 consecutive numbers
 Default value of step is 1
 
-Step ==> positive ==> forward direction ==> L to R ==> stop or end - 1
-Step ==> negative ==> reverse direction ==> R to L ==> stop or end + 1
+Step ==> positive ==> forward direction ==> L to R ==> stops or end at - 1
+Step ==> negative ==> reverse direction ==> R to L ==> stops or end at + 1
 
 '''
