@@ -5,26 +5,30 @@
 Before the condition there's a variable (x)
 E.g
 '''
-x = 10 # x is a value while 10 is the variable
+x = 10 # x is a variable while 10 is the value
 if x>5: # inside "if" body the condition can have multiple statement. We're also passing the x value inside the "x>5 memory location"
-    print("x is greater than 5") # Output is "x is greater than 5"
+    print("x is greater than 5") 
 else:
     print("x is less than 5")
-
+'''
+Output is 
+x is greater than 5
+'''
 name = input("Enter Name = ")
-if name == "Ola": # Using this "equality == operators" for comparison and to check if the statement is true
-                 # But when use single '= operator' it is seen as an assignment of a value
-# We use if to validate the statement as it's added above"
+if name == "Ola": 
+# Using the above "equality == operators" for comparison is to check if the statement is true
+# But when use single '= operator' it is seen as an assignment of a value
+# We use "if" to validate the statement as it's added above"
     print("Hello Ola, Good Morning")
 print("How are you?") #storing a data inside variable
 '''
-Output is;
-Enter Name = Ola
+Output is
+Enter Name = Ola (prompted and i manually typed in "Ola" in the console)
 Hello Ola, Good Morning
 How are you?
 
 2nd run Output with a different name input
-Enter Name = Mike
+Enter Name = Mike (prompted and i manually typed in "Mike" in the console)
 How are you?
 '''
 # When using the conditional statement one needs to specify ":" colon after the "if statement" otherwise it will give SyntaxError
@@ -32,18 +36,21 @@ How are you?
 
 # if-else conditional statement
 # ------------------------------
-y = 3 # Variable "y" and Value is "3"
-# Checking if y is an even number and to check a reminder modular division "%" operator will give a reminder
+y = 3 # Variable is "y" and Value is "3"
+# Checking if 'y' is an even number and to check a reminder modular division "%" operator will give a reminder
 if y%2 == 0:
     print("Even Number") 
 # if action 1 is true action 2 will be executed
 else:
     print("Odd Number")
-# Output is Odd Number
-
+'''
+Output is 
+Odd Number
+'''
 name = input("Enter Name = ")
-if name == "Ola": # Using this "equality == operators" for comparison and to check if the statement is true
-                 # But when use single '= operator' it is seen as an assignment of a value
+if name == "Ola": 
+# Using this "equality == operators" for comparison and to check if the statement is true
+# But when use single '= operator' it is seen as an assignment of a value
 # We use if to validate the statement as it's added above"
     print("Hello Ola, Good Morning")
 else:
@@ -51,13 +58,13 @@ else:
 print("How are you?") #storing a data inside variable
 '''
 Output is;
-Enter Name = Gus
+Enter Name = Gus (prompted and i manually typed in "Gus" in the console)
 Hello Guest Fine Morning
 How are you?
 '''
 
-if-elif-else conditional statement
-----------------------------------
+# if-elif-else conditional statement
+# -----------------------------------
 marks = 65 
 # we want to check grades of student base on marks
 if marks>=90:
@@ -72,11 +79,11 @@ else:
 Output when used 75 for varaible is 
 C Grade
 
-Output at 2nd execution after add the last "else" which is the default action and changing variable number to 65
+Output at 2nd execution after adding the last "else" which is the default action and changing variable number to 65
 He is Failed
 '''
 
-# How to read some favorite brand name from the user by using the input method?
+# How to read some favourite brand name from the user by using the input method?
 brand = input("Enter Your Favourite Brand: ")
 if brand == "RC":
     print("This is Children's brand")
@@ -88,7 +95,7 @@ else:
     print("Other brands are not recommended")
 '''
 Output 1 is
-Enter Your Favourite Brand: MK
+Enter Your Favourite Brand: MK (MK not a registered variable after hence gievn the default (else) statement below)
 Other brands are not recommended
 
 Output 2

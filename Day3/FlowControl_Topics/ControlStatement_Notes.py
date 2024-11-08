@@ -1,8 +1,8 @@
 '''
 Flow Control or Control Statements in Python
 ---------------------------------------------
-A flow control decides orders in which statements need to be executed
-Only few statments can be executed in all statements
+A flow control decides orders in which statements need to be executed.
+Only few statments can be executed in all statements.
 
 Types of Statements
 -------------------
@@ -13,7 +13,8 @@ Types of Statements
 
 Conditional Statements (Examples are located in Day 5 Conditional_Statements.py file)
 -----------------------
-When we talk about Conditional Statemnet we need to specify some conditions and that condition is Logical or Expressions conditions
+When we talk about Conditional Statement we need to specify some conditions, 
+and that condition is either Logical or Expressions conditions
 
 E.g of 
 Logical Statements;
@@ -38,13 +39,13 @@ if or simple if statement
 -------------------------
 if condition (is True): (you need to perform an action)
 Action can be a statement
-We can have multiple statements e.g statement 1, statement 2, statement 3 etc. and they are simply group together 
+We can have multiple statements e.g statement 1, statement 2, statement 3 etc. and they are simply grouped together 
 If an "if" condition is a True statement it will be executed inside the "if or simple if" statement otherwise it won't be executed
 for every statement in python
 
 
 if-else statement requires multiple actions
-------------------
+--------------------------------------------
 if condition:
     Action-1
 else:
