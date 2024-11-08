@@ -1,22 +1,26 @@
 '''
 Operators in Python:
+--------------------
 Operators is a symbol which will perform some operations between operands or variables e.g arithemetric, condition, assignment etc.
 With the help of symbols it will perform an operations
 
 Types of Operators:
+-------------------
+
 1. Arithmetic Operators 
 (Example to Arihhmetic operators with descriptions: +:addition, -:subraction, *:multiplication, /:division, //:floor division, %:modulo division, **:exponent operator or power operator)
 
 2. Relational Operators or Comparision Operators (When you perform relational operators you get a comparison operators)
-When you perform an operations with two objects it's called relational operator becuase it's impossible to perform operation just an object
-Operator       |            Description
+When you perform an operations with two objects it's called relational operator becuase it's impossible to perform operation with just an object
+Operator       |           Description
     >                      Greater Than
     >=                     Greater Than or Equal To
     <                      Less Than
     <=                     Less Than or Equal To
+
 Relational operators and Comparison operators will always returns Boolean value (True or Flase) once it performs is operations
 
-Coomparision on strings is based on ascii code e.g
+Comparision on strings is based on ascii code e.g
 a = "John"
 b = "Ram"
 print (ord('J')) character and acsii code is "74"
