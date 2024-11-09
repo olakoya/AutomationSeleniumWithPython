@@ -50,9 +50,9 @@ If a number is a negative number it's always represented by 2's compliment form
 1's complement
 E.g
 If we have 1 --> 0
-If w ehave 0 --> 1
+If we have 0 --> 1
 
-        MSB                            LSB
+        MSB                        LSB
 10      0   0   0   0   1   0   1   0
 ~10     1   1   1   1   0   1   0   1
 

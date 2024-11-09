@@ -17,3 +17,8 @@ y-=10 # is the same as y = y-10 = 10 because 20 is the value of y
 
 print(x)
 print(y)
+'''
+Output is
+30
+10
+'''

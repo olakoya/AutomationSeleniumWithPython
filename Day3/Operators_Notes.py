@@ -20,7 +20,7 @@ Operator       |           Description
 
 Relational operators and Comparison operators will always returns Boolean value (True or Flase) once it performs is operations
 
-Comparision on strings is based on ascii code e.g
+Comparison on strings is based on ascii code e.g
 a = "John"
 b = "Ram"
 print (ord('J')) character and acsii code is "74"

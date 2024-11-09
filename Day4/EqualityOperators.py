@@ -6,9 +6,10 @@ print ("John"=="John") # Output is True, which means a true boolean value
 # The above are comparing the content if they're equal, and this is called equality operators
 
 # Operator Type : Equality Operators
+# -----------------------------------
 # Operators and Descriptions: 
-#1. == Equal
-#2. != Not Equal
+# 1. == Equal
+# 2. != Not Equal
 
 # Above is a true boolean value
 # Chaining concept is applicable for equality operators. If at least one comparison returns False then the results is False.
@@ -22,6 +23,7 @@ print(10==20==30==40) # Output is False, which means a false boolean value
 print(10==10==10==40) # Output is False, which means a false boolean value 
 
 # Operator Type: Logical Operators
+# ---------------------------------
 # Opeartors: and, or , not (not is just a compliment)
 
 # a-True, b-True, a and b-True, a or b-True, not a-False

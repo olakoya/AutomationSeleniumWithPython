@@ -8,8 +8,8 @@ print(a/b)   # "5.0" Division operator always performs floating point arithmetri
 print(a*b)   
 print(a==b)
 print(a//b)  # "5" Floor division can perform both floating point and integral arithmetric
-print(a%b)   # "0" Modulo opeartor always return remainder. It's remainder is "0"
-print(a**b) # "a" is a power of b" It is a power operation
+print(a%b)   # "0" Modulo operator always return remainder. It's remainder is "0"
+print(a**b) # "a" is a power of "b" It is a power operation
 # When you perform an operation it gives you results
 '''
 Output is
