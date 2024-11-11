@@ -1,7 +1,8 @@
 # Identity Operators 
+# -------------------
 # It addresses comparison
 # This means if two objects are pointing to two different things ie two variables pointing to the same object is Identity
-#   is ==> True, False (It will return True if both obejects are the same and False if not the same)
+#   is ==> True, False (It will return True if both objects are the same and False if not the same)
 #   is not ==> True, False (It will return False if both objects are the same and True if not the same)
 # E.g. 
 x = 10

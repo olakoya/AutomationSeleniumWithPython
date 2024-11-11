@@ -1,3 +1,5 @@
+# Ternary Operators
+# ------------------
 # Ternary Operators returns sysntax values i.e.
 # What it does is that based on condition it returns value
 
@@ -26,7 +28,7 @@ print(a+b) # "+"" between strings is known as Concatenation which means (joining
 # Output for above script will give the combination of a and b and not total number from the first and second numbers entered when prompted
 # Because it's string so, if I enter 10 as 1st nos and 30 as 2nd nos the output of a+b will be 1030
 
-# + between strings is treated as an concatenation (joinng) operator.
+# + between strings is treated as an concatenation (joining) operator.
 # E.g. 
 # "Hello" 
 # "Bharhati"

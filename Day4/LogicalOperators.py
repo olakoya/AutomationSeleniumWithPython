@@ -1,3 +1,5 @@
+# Logical Operator
+# ----------------
 # a-True, b-True, a and b-True, a or b-True, not a-False
 # a-True, b-False, a and b-False, a or b-True, not a
 # a-False, b-True, a and b-False, a or b-True, not a-True
@@ -20,7 +22,7 @@
 
 # x and y
 print (0 and 10) # Output is 0 because 0 is False while 10 is True, so False and True = False (you pick the boolean that appears to be False)
-print (10 and 20) # Output is 20 because 10 is True while 10 is True, so True and True = True (you pick the content/variable that comes last)
+print (10 and 20) # Output is 20 because 10 is True while 20 is True, so True and True = True (you pick the content/variable that comes last)
 print (20 and 10) # Output is 10 because 20 is True while 10 is True, so True and True = True (you pick the content/variable that comes last)
 print (10 and 0) # Output is 0 because 10 is True while 0 is False, so True and False = False (you pick the boolean that appears to be False)
 
