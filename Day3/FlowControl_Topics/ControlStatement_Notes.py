@@ -84,7 +84,7 @@ The above are 4 types of the if conditional statements.
 There is no switch statement in Python
 '''
 '''
-Iterative or Looping Statements
+Iteractive or Looping Statements (Codes can be found under Day 6 Interactive Statements File)
 --------------------------------
 If we want to execute some statements multiple times ie. looping or executing the statements multiple times
 It could be either
@@ -93,7 +93,7 @@ It could be either
 
 while loop statements (Examples are located in Day 6 Interactive_Statements.py file)
 ----------------------
-If will want to execute a group of statements in a loop until a condition is false
+If we want to execute a group of statements in a loop until a condition is false
 
 Syntax for using while loop is
     1. Initialiazation ==> start value

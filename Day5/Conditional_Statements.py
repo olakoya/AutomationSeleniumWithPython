@@ -95,7 +95,7 @@ else:
     print("Other brands are not recommended")
 '''
 Output 1 is
-Enter Your Favourite Brand: MK (MK not a registered variable after hence gievn the default (else) statement below)
+Enter Your Favourite Brand: MK (MK not a registered variable1 hence gievn the default (else) statement below)
 Other brands are not recommended
 
 Output 2

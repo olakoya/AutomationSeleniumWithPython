@@ -1,3 +1,5 @@
+# Range Function
+# ---------------
 # For notes to support the below codes, check Day 3 ControlStatement Notes File
 # Python file is a range of module, and we can create class, functions etc inside this module 
 '''
@@ -40,7 +42,7 @@ The gives a sequence that started from 0 and ends in 199
 # From instance if we want to start the range from 75, this is where we use Form 2 range (start, stop)
 # Form - 2 ==> range(start,stop)
 # ------------------------------
-print(list(range(75,200,1))) # the start value here is 75 and it stops at 200
+print(list(range(75,200,1))) # the start value here is 75 and it stops at 200 with 1 step each to next number on the list
 '''
 Output is 
 [75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 
@@ -52,7 +54,7 @@ Output is
 
 # Step Value 
 # ------------
-print(list(range(50,201,3))) # the step value here is 3 and it's positive
+print(list(range(50,201,3))) # the step value here is 3 and it's positive i.e. 3 steps each to next number on the list
 '''
 Output is 
 [50, 53, 56, 59, 62, 65, 68, 71, 74, 77, 80, 83, 86, 89, 92, 95, 98, 101, 104, 107, 110, 113, 116, 119, 122, 125, 128, 131, 134, 
@@ -123,7 +125,7 @@ print(list(range(10,1,1)))
 Output is 
 [] ie blank
 '''
-range(10,1,1)
+range(-10,1,5)
 print(list(range(-10,1,5)))
 '''
 Output is 
