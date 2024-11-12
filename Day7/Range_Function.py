@@ -141,3 +141,22 @@ print(list(range(-10,-5)))
 Output is 
 [-10, -9, -8, -7, -6]
 '''
+# Different types of a range functions are: range(start,stop, step) stops at -1
+# ------------------------------------------------------------------------------
+print(list(range(10,1,-1))) 
+# It will generate sequence of numbers starting from 10 and ends with 1 in a reverse direction and decrement of -1 step value
+print(list(range(10,1,1))) 
+# It will generate Empty set of numbers starting from 10 and ends with 1 in a forward direction and increment of +1 step value
+print(list(range(10,15,-1))) 
+# It will generate Empty set of numbers starting from 10 and ends with 15 in increment of -1 of which it isn't possible
+print(list(range(15,10,1)))
+# It will generate Empty set of numbers starting from 15 and ends with 10 in a forward direction and increment of +1 step value
+'''
+Output are
+[10, 9, 8, 7, 6, 5, 4, 3, 2]
+[]
+[]
+[]
+
+This range of cunction can by use for 'for' loop
+'''
