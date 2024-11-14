@@ -13,8 +13,8 @@
 Pycharm ==> IDE
 VSCODE ==> IDE
 
-Description of a method or function
-------------------------------------
+Description of a method or function in Pycharm
+-----------------------------------------------
 1. Mouse over onto specific method or function
 2. Press control button on keyboard
 3. Press left button on mouse
