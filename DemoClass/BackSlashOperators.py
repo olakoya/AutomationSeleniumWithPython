@@ -8,3 +8,18 @@
 # 8) \"
 # 9) \\
 # ....
+
+'''
+Pycharm ==> IDE
+VSCODE ==> IDE
+
+Description of a method or function
+------------------------------------
+1. Mouse over onto specific method or function
+2. Press control button on keyboard
+3. Press left button on mouse
+4. Perform 2+3 together
+'''
+with open("output.doc", "a") as f:
+    f.write("Creating a new text file makes it work\n") # using write method to execute the statement
+print("Script Executed")
