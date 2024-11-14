@@ -64,37 +64,3 @@ Second or ending (', ") quote is called terminate quote
 We can use double quotes inside single quotes likewise in single quotes in double quotes e.g
 "This is 'string data' type introduction session"
 '''
-
-'''
-\ ==> Escape Character
-
-Accessing Characters inside String
------------------------------------
-s = "welcome" 
-s = "Hello"
-
-Types are:
-----------
-Index 
-Slice operator
-
-Every character inside string will have address or location or index.
-With the help of address or location or index we can access data inside a string.
-E.g
-s = "welcome" (w e l c o m e ) in the string are all individual character that has an address or location
-
-Accessing characters by index
-------------------------------
-Python support both +ve and -ve indexing
-+ve and -ve characters are called index
-
-0   1   2   3   4
-H   E   L   L   O
--5  -4  -3  -2   -1
-
-+ve ==> (L to R) ==> forward direction
-
--ve <== backward direction <== (R to L)
-
-In the forward direction ==> the first index is "0" for the "H" character as seen from above
-'''
