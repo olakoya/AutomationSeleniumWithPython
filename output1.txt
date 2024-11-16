@@ -1,3 +1,11 @@
 Test line 
 This is Ola 
 Creating a new text file makes it work
+Hello world !
+Hello World!
+This is Ola 
+Creating a new text file makes it work
+Hello world !
+Hello World!
+This is Ola 
+Creating a new text file makes it work

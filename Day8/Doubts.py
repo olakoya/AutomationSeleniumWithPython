@@ -166,4 +166,4 @@ Script Executed
 '''
 with open("output1.doc", "a") as f:
     f.write("Creating a new text file makes it work\n") # using write method to execute the statement
-print("Script Executed")
+print("Script Executed, ")
