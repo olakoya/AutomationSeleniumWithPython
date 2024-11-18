@@ -23,6 +23,8 @@ sum = e+f
 print(sum)
 '''
 Output is 126
+
+We do have duplications and maintenance issues following the above codes
 '''
 '''
 2. We have to define these statements as a single unit and we can call that unit any number of times based on our requirements 
@@ -45,6 +47,7 @@ Types of functions
 
 1. Built-in functions
 ----------------------
+Comes along with python software
     print(), id(), type(), eval(), etc
 
 2. User-defined functions
@@ -64,7 +67,7 @@ d. To create a method we need to know how to create a function:
 e. And to create function we need to following the below steps:
     1. we need to know how to use 'def' keyword. ==> def
     2. Afterwards, we need to specify a function name ==> def function_name
-    3. Then we need to specify the open and close parenthesis () ==> def function_name()
+    3. Then we need to specify the open and close parenthesis () ==> def function_name(inputs/parameters)
     4. And then we specify colon : ==> def function_name():
     5. The above syntax is how we can create a function
     6. once we specify the function  and under it comes:
@@ -86,11 +89,11 @@ Example of User-Defined Functions is:
 Find the live code and explanantion below;
 '''
 
-def add_element(a,b):
-    sum = a+b
+def add_element(a,b): # Declaration or creation of a function
+    sum = a+b # sum/adding of the parameters
     print(sum)
 
-add_element(10,5)
+add_element(10,5) # parameters turned arguements after adding values
 add_element(100,250)
 add_element(79,47)
 # Group name is called a function name
@@ -99,6 +102,7 @@ Outputs are:
 15
 350
 126
+Outputs are called Values
 '''
 '''
 Above codes explanation:
@@ -131,17 +135,27 @@ What are the mandatory Parameters?
 5. Inside body we have group of statements (sometimes we can define empty functions) which is optional
 6. Result, and this can be optional too
 7. Parameters are also optional
-8. Parameters are nothing but input. (This input means it's asking or requesting for something which is data)
-9. Parameter (a,b) calling function_name
+8. Inputs/Parameters are nothing but inputs to the function. (This input means it's asking or requesting for something which is data)
+9. Inputs/Parameter (a,b) calling function_name
 10. Values are added for a and b during function add_elements() calls 
 11. And after adding values to parameters it becomes arguements during function calls
 12. Parameters are inputs to the function call and values are arguement to the parameters
 '''
 '''
-There are 4 Scenarios to these functions;
------------------------------------------
+There are 4 Scenarios to these functions based on Inputs/Parameters;
+---------------------------------------------------------------------
 1. No Arguements and No Return Value or Result
 2. With Arguements and No Return Value or Result
 3. With Arguements and With Return Value or Result
 4. No Arguements and With Return Value or Result
+'''
+'''
+Types of Arguements
+--------------------
+1. Positional
+2. Keyword
+3. Default
+4. Variable
+5. Keyword Variable Length
+
 '''

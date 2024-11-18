@@ -2,6 +2,7 @@
 Functions in Python
 --------------------
 Function is a group of statements upon calling to perform certain task.
+It is also an entry point.
 
 '''
 
@@ -41,7 +42,16 @@ Parameters ==> inputs ==> values ==> Arguements
 '''
 # No Arguements and No Return value => this is optional parameters
 #-----------------------------------------------------------------
+# Example 1
+def func():
+    print("Hello")
+func()
+print(func())
 
+'''
+Output is
+Hello
+'''
 def myfun(name):
     print("Hello")
 myfun("Ola")
@@ -54,13 +64,20 @@ Hello
 
 # No Arguements and No Return value => this is optional parameters
 #-----------------------------------------------------------------
-def myfun(name):
-    print("Hello", name)
-print(myfun("OLA"))
-myfun("PRADEEP")
+
+
+# Example 2
+
+# def myfun(name):
+#     print("Hello", name)
+# print(myfun("OLA"))
+# myfun("PRADEEP")
 '''
 Output is:
 Hello OLA
 None
 Hello PRADEEP
 '''
+
+# With Arguements and No Return Value or Result
+#------------------------------------------------

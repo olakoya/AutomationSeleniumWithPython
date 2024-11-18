@@ -20,3 +20,16 @@ Description of a method or function in Pycharm
 3. Press left button on mouse
 4. Perform 2+3 together
 '''
+'''
+Manual Testing concepts
+Python
+Selenium
+API testing ==> Postman
+Jenkins
+Git
+Linux
+
+Selenium ==> Python + Playwright(Microsoft)
+Cypress ==> Open Source
+DE ==> AI
+'''
