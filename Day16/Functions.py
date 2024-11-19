@@ -3,7 +3,7 @@ Functions in Python
 --------------------
 1. If a group of statements is repeatedly required then it is not recommended to write these statements everytime seperately.
 E.g
-The below 3 code statements aren't required and they are all doing addition statements;
+The below 3 code statements aren't required and they are all doing the same addition statements;
 '''
 a = 10
 b = 5
@@ -64,13 +64,14 @@ a. Most of the time we will create methods whenever we are implenting a Page Obj
 b. And this Page Object model is a method which is a function created in a class.
 c. If you know the function it's easy to work with a class and object because inside classes there is a method.
 d. To create a method we need to know how to create a function:
-e. And to create function we need to following the below steps:
+e. And to create function we need to follow the below steps:
     1. we need to know how to use 'def' keyword. ==> def
+    1a. Def is a declaration or creation of a function
     2. Afterwards, we need to specify a function name ==> def function_name
     3. Then we need to specify the open and close parenthesis () ==> def function_name(inputs/parameters)
     4. And then we specify colon : ==> def function_name():
     5. The above syntax is how we can create a function
-    6. once we specify the function  and under it comes:
+    6. once we specify the function, directly under it i.e. function_name comes:
         def function_name():
             i. in some cases we can specify documentation string ("""doc string""") in double quotes " "
             i.e. comments telling what the above line of code (function_name) is going to do.
@@ -79,8 +80,9 @@ e. And to create function we need to following the below steps:
             iv. what this function_name is going to do will be described or specify by 'doc string' 
             v. And this function_name can also have parameters
             vi. parameters are nothing but inputs and can be as many as it's required
+            vii. add_element() is calling or invoking a function
 
-Example of User-Defined Functions is:
+Example of User-Defined Functions are:
 -------------------------------------
     def add_element(a,b):
     sum = a+b
@@ -155,7 +157,7 @@ Types of Arguements
 1. Positional
 2. Keyword
 3. Default
-4. Variable
+4. Variable Length
 5. Keyword Variable Length
 
 '''

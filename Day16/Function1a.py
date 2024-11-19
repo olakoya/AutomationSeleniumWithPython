@@ -26,6 +26,7 @@ So, how to define function from the above codes;
 4. Inside the parenthesis we have the variables a and b which are parameters ==> (a and b)
 5. And then the group statements ==> (sum = a+b) and (print(sum))
 6. When we call the function ==> (def add_elements(a,b):) it will perform the group name ==> (sum = a+b) and (print(sum))
+7. Value pass to the parameters during run time is called arguement
 '''
 '''
 Types of Functions are
@@ -40,38 +41,49 @@ Types of Functions are
 Function can take parameters and can take in data and this are called arguments
 Parameters ==> inputs ==> values ==> Arguements
 '''
-# No Arguements and No Return value => this is optional parameters
-#-----------------------------------------------------------------
-# Example 1
+# 1. No Arguements and No Return value 
+#--------------------------------------
+# => this is with optional parameters
+
+# E.g. 1
 def func():
     print("Hello")
 func()
+
+'''
+Output is
+Hello
+'''
+
+# E.g. 2
+def func():
+    print("Hello")
 print(func())
 
 '''
 Output is
-Hello
-'''
-def myfun(name):
-    print("Hello")
-myfun("Ola")
-
-'''
-Output is
-Hello
+None
 '''
 # Parameters are also variables
 
-# No Arguements and No Return value => this is optional parameters
-#-----------------------------------------------------------------
+# 2. With Arguements and No Return Value or Result
+#--------------------------------------------------
+# E.g. 1
+def myfun(name):
+    print("Hello", name)
+myfun("Ola")
+myfun("Nadine")
 
+'''
+Output is
+Hello Ola
+'''
 
-# Example 2
-
-# def myfun(name):
-#     print("Hello", name)
-# print(myfun("OLA"))
-# myfun("PRADEEP")
+# E.g. 2
+def myfun(name):
+    print("Hello", name)
+print(myfun("OLA"))
+myfun("PRADEEP")
 '''
 Output is:
 Hello OLA
@@ -79,5 +91,65 @@ None
 Hello PRADEEP
 '''
 
-# With Arguements and No Return Value or Result
+# 3. With Arguements and With Return Value or Result
 #------------------------------------------------
+# E.g 1
+def myfun(name):
+    return "Hello", name
+
+print(myfun("Ola"))
+'''
+Output is
+('Hello', 'Ola')
+'''
+
+# E.g 2
+def myfun(name):
+    return "Hello "+name
+
+print(myfun("Ola"))
+'''
+Output is
+Hello Ola
+'''
+
+# E.g 3
+def myfun(name):
+    return "Hello "+name
+
+myfun("Ola")
+
+'''
+Output is
+None
+'''
+
+# 4. No Arguements and With Return value 
+#----------------------------------------
+# E.g 1
+def fun():
+    return 10
+x = fun()
+print(x)
+'''
+Output is
+10
+'''
+
+# E.g 2
+def fun():
+    return 10
+print(fun())
+'''
+Output is
+10
+'''
+
+# E.g. 3 
+def fun():
+    return 10
+fun()
+'''
+Output is
+None
+'''
