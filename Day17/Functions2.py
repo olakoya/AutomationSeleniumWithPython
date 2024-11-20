@@ -75,19 +75,19 @@ And this is useful print(a/b) when there's no input
 # -------------------------------------
 '''
 This allows passing of any number of arguement including zero number
-In the form of tuple ==> (1,2,3), this arguement is true
+These are stored in the form of tuple ==> (1,2,3), this arguement is true
 '''
 # E.g
-def sum(*n): # *n is the number of variable to pass
-    total = 0 # simple statement
-    for n1 in n: # print of number of arguement i.e. tuple(1,2,3)
-        total = total+n1 # adding "total = 0" and "for n1 in n" together
-    print(total) # printing the total sum of all the arguement
+# def sum(*n): # *n is the number of variable to pass
+#     total = 0 # simple statement
+#     for n1 in n: # print of number of arguement i.e. tuple(1,2,3)
+#         total = total+n1 # adding "total = 0" and "for n1 in n" together
+#     print(total) # printing the total sum of all the arguement
 
-sum () # calling the function with the total number of arguement
-sum(10) # passing arguement
-sum(20,30) # i.e. *n: 20, 30
-sum(10,20,40,60,70,80,80) # i.e. *n: 10,20,40,60,70,80,80
+# sum () # calling the function with the total number of arguement
+# sum(10) # passing arguement
+# sum(20,30) # i.e. *n: 20, 30
+# sum(10,20,40,60,70,80,80) # i.e. *n: 10,20,40,60,70,80,80
 '''
 Output is 
 0 total = total 0 + n1 0 => print 0
@@ -96,4 +96,42 @@ Output is
 360 total = total 0 + n1 10+20+40+60+70+80+80 => print 360
 
 Number of varaibale can be specify with * and a letter
+'''
+
+# IMPORTANT NOTES
+# -----------------
+'''
+1. Position arguements must come first
+2. Non-Default comes before default
+3. Variable-length arguments can mix with positional
+4. Arguements after variable-length must be keyword only
+'''
+
+# 5. Keyword Variable Length Arguements ==> **kwargs
+# ---------------------------------------------------
+'''
+These are stored in form of Dictionary 
+And in the dictionary we have ==> Key and value pairs e.g (key 1, Value 1), (key2, value 2)
+The arguements are represented in the form of dictionary
+And it can be represented by using double star kwargs i.e. **kwargs
+**kwargs is the arguement name whenever we are declaring a function
+** means keyword variable length arguement
+kwargs means kw ==> keyword, args ==> arguements and both combined is called kwargs
+'''
+# E.g
+def display(**n): # declaring a function
+    for k,v in n.items(): # using for loop for k,v in dictionary n.item (n values while n is dictionary and it will only return dictionary)
+    # when one use value it will return only value and if it's item used it will return kwargs i.e k and v
+        print(k,v) # print key k and it's value v
+# Whenever we are declaring a function "def display(**n):" 
+# and this function is having a requirement to take input "for k,v in n.items()" as a dictionaryits then make "**n"
+display(n1=10, n2=20, n3=30)
+'''
+Output is
+n1 10
+n2 20
+n3 30
+
+One can also use variable inside functions 
+And variables are not parameters
 '''
