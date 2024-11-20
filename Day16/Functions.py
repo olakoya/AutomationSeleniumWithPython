@@ -151,13 +151,3 @@ There are 4 Scenarios to these functions based on Inputs/Parameters;
 3. With Arguements and With Return Value or Result
 4. No Arguements and With Return Value or Result
 '''
-'''
-Types of Arguements
---------------------
-1. Positional
-2. Keyword
-3. Default
-4. Variable Length
-5. Keyword Variable Length
-
-'''
