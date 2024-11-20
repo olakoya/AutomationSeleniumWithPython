@@ -15,12 +15,12 @@ This is arguements passed in correct order
 Changing order or changing number of arguements will return an error or incorrect results
 '''
 # E.g
-# def func(a,b): # first you define a function
-#     print(a/b) # simple statement 
+def func(a,b): # first you define a function
+    print(a/b) # simple statement 
 
-# func(10,5) # calling functions, passing values and calling the arguements
-# func(5,10)
-# func(10,5,12)
+func(10,5) # calling functions, passing values and calling the arguements
+func(5,10)
+func(10,5,12)
 '''
 Output is 
 2.0
@@ -38,11 +38,11 @@ These are arguements passed using parameter names
 Order isn't important but number of arguement is important
 '''
 # E.g
-# def func(a,b): # first you define a function
-#     print(a/b) # simple statement
+def func(a,b): # first you define a function
+    print(a/b) # simple statement
 
-# func(a=10,b=5) # with help of parameters i'm passing the value
-# func(b=5,a=10) # order isn't important
+func(a=10,b=5) # with help of parameters i'm passing the value
+func(b=5,a=10) # order isn't important
 '''
 Output is
 2.0
@@ -56,12 +56,12 @@ This is to assign default values to parameters
 If no value is passed during function call default value is taken
 '''
 # E.g
-# def func(a=10,b=5): # first you define a function and assign default value arguement
-#     print(a/b) # simple statement
+def func(a=10,b=5): # first you define a function and assign default value arguement
+    print(a/b) # simple statement
 
-# func()
-# func(15)
-# func(100,200)
+func()
+func(15)
+func(100,200)
 '''
 Output is
 2.0 printing result without passing value func() but passed result from the default values
@@ -78,16 +78,16 @@ This allows passing of any number of arguement including zero number
 These are stored in the form of tuple ==> (1,2,3), this arguement is true
 '''
 # E.g
-# def sum(*n): # *n is the number of variable to pass
-#     total = 0 # simple statement
-#     for n1 in n: # print of number of arguement i.e. tuple(1,2,3)
-#         total = total+n1 # adding "total = 0" and "for n1 in n" together
-#     print(total) # printing the total sum of all the arguement
+def sum(*n): # *n is the number of variable to pass
+    total = 0 # simple statement
+    for n1 in n: # print of number of arguement i.e. tuple(1,2,3)
+        total = total+n1 # adding "total = 0" and "for n1 in n" together
+    print(total) # printing the total sum of all the arguement
 
-# sum () # calling the function with the total number of arguement
-# sum(10) # passing arguement
-# sum(20,30) # i.e. *n: 20, 30
-# sum(10,20,40,60,70,80,80) # i.e. *n: 10,20,40,60,70,80,80
+sum () # calling the function with the total number of arguement
+sum(10) # passing arguement
+sum(20,30) # i.e. *n: 20, 30
+sum(10,20,40,60,70,80,80) # i.e. *n: 10,20,40,60,70,80,80
 '''
 Output is 
 0 total = total 0 + n1 0 => print 0
