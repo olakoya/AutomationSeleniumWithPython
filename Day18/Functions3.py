@@ -55,4 +55,15 @@ Output is
 16
 10000
 1000000
+
+Lambda function is a simple or one-time task 
+It is also used as an arguement to another function and these are follows below;
+
+Types of Lambda Function
+------------------------
+1. filter() function ==> this filter the data
+2. map() function ==> this applies function to each and every element of a sequence which simplify the logic and return a result
+3. reduce() function 
+
+Most of the time lambda function is used as an arguement to the above 3 functions
 '''
