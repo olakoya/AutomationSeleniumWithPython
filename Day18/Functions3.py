@@ -21,15 +21,38 @@ Lambda Syntax
 # A Normal Function
 # -------------------
 
-def squareit(n): # Using a "def" keyword with a function name "squareit" including an open and close parenthensis ()
-    print(n*n) # and inside the body I'm specifying the expressions (n*n) by accepting some parameters
+# def squareit(n): # Using a "def" keyword with a function name "squareit" including an open and close parenthensis ()
+#     print(n*n) # and inside the body I'm specifying the expressions (n*n) by accepting some parameters
 
-squareit(3)
-squareit(10)
-squareit(300)
+# squareit(3)
+# squareit(10)
+# squareit(300)
 '''
 Output is 
 9
 100
 90000
+'''
+
+'''
+Lambda Function
+----------------
+To define a lambda function one needs to specify a lambda keyword
+lamba ==> Once the lambda keyword has been defined one need to specify the arguement list
+n: ==> This is the arguement list and for that reason we are using only a parameter to get THE SQUARE OF A NUMBER just as the above example code
+n*n ==> And this is the expression one will print
+n,m ==> This is to have and specify double arguement but for lambda it is only one arguement or expression we need
+s ==> This is assigning a variable should there be any changes in data so as to be stored in this lambda n:n*n function
+Then we can the variable with the help of the arguement
+'''
+# E.g
+s = lambda n:n*n
+print(s(4)) # without the print ststement it will be impossible to see what the expression is returning to me
+print(s(100))
+print(s(1000))
+'''
+Output is
+16
+10000
+1000000
 '''
