@@ -21,12 +21,12 @@ Lambda Syntax
 # A Normal Function
 # -------------------
 
-# def squareit(n): # Using a "def" keyword with a function name "squareit" including an open and close parenthensis ()
-#     print(n*n) # and inside the body I'm specifying the expressions (n*n) by accepting some parameters
+def squareit(n): # Using a "def" keyword with a function name "squareit" including an open and close parenthensis ()
+    print(n*n) # and inside the body I'm specifying the expressions (n*n) by accepting some parameters
 
-# squareit(3)
-# squareit(10)
-# squareit(300)
+squareit(3)
+squareit(10)
+squareit(300)
 '''
 Output is 
 9
@@ -46,10 +46,10 @@ s ==> This is assigning a variable should there be any changes in data so as to 
 Then we can print the variable with the help of the arguement
 '''
 # E.g
-# s = lambda n:n*n
-# print(s(4)) # without the print statement it will be impossible to see what the expression is returning to me
-# print(s(100))
-# print(s(1000))
+s = lambda n:n*n
+print(s(4)) # without the print statement it will be impossible to see what the expression is returning to me
+print(s(100))
+print(s(1000))
 '''
 Output is
 16
@@ -85,9 +85,9 @@ And once the arguement is passed through the filter function it will filter the 
 # Filter() Function
 # ------------------------
 # E.g 1 divisible by
-# i = [0,5,10,15,20,25,30] # List of sequence
-# # From the list we need to filter value and to print them visible by 2 one needs to use the filter function
-# print(list(filter(lambda x:x%2==0,i)))
+i = [0,5,10,15,20,25,30] # List of sequence
+# From the list we need to filter value and to print them visible by 2 one needs to use the filter function
+print(list(filter(lambda x:x%2==0,i)))
 # lambad is an arguement list and needs to make it visible by 2
 # Expression is making the sequnce divisible by 2
 '''
@@ -104,8 +104,8 @@ Output is filtering in division of 2
 [0, 10, 20, 30]
 '''
 # E.g 2 not divisible by 2
-# i = [0,5,10,15,20,25,30]
-# print(list(filter(lambda x:x%2!=0,i)))
+i = [0,5,10,15,20,25,30]
+print(list(filter(lambda x:x%2!=0,i)))
 '''
 Output is filtering in division of not 2
 [5, 15, 25]
@@ -124,8 +124,8 @@ The same syntax just as filter.
 '''
 
 # E.g 
-# i = [0,5,10,15,20,25,30]
-# print(list(map(lambda x:x+2,i))) # the same statement just as filter but in addition of 2 for modicfication 
+i = [0,5,10,15,20,25,30]
+print(list(map(lambda x:x+2,i))) # the same statement just as filter but in addition of 2 for modicfication 
 '''
 Output is in modification
 [2, 7, 12, 17, 22, 27, 32]
