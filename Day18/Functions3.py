@@ -69,8 +69,8 @@ Most of the time lambda function is used as an arguement to the above 3 function
 Lets look at how we can reach an requirement with the help of the 3
 '''
 '''
-Filter Function
-----------------
+1. Filter Function
+-------------------
 This will filter values from given sequence if the sequence is a requirement.
 The logic to filter inside sequence is taken from lambda function
 This filter function takes another function as an arguement
@@ -100,24 +100,71 @@ In this simple line "lambda x:x%2==0", one is achieving this function and specif
 "x%2" this is filtering the value which is divisible by 2 with an i i.e a number from the sequence is divided by 2
 "print(list)" And to print it's converted to data structure in the form of list result
 
-Output is 
+Output is filtering in division of 2
 [0, 10, 20, 30]
 '''
 # E.g 2 not divisible by 2
 # i = [0,5,10,15,20,25,30]
 # print(list(filter(lambda x:x%2!=0,i)))
 '''
-Output is 
+Output is filtering in division of not 2
 [5, 15, 25]
 The function contains some logic
 '''
 
-# Map() Function
-# ------------------------
-# E.g 1 addition of 2
-i = [0,5,10,15,20,25,30]
-print(list(map(lambda x:x+2==0,i)))
 '''
-Output is 
-[False, False, False, False, False, False, False]
+2. Map() Function
+------------------
+Is having a multiple element inside a sequence and for each and every element inside a sequence applies some new functionality 
+or a new operation and return the result.
+Map doesn't filter any values but it modifies that element to another element or to another modifcation or to another functionality
+It's like doing decoration i.e modifying to existing element.
+The same syntax just as filter.
+    syntax ==> map(function, sequence)
+'''
+
+# E.g 
+# i = [0,5,10,15,20,25,30]
+# print(list(map(lambda x:x+2,i))) # the same statement just as filter but in addition of 2 for modicfication 
+'''
+Output is in modification
+[2, 7, 12, 17, 22, 27, 32]
+The map function is applied on each and every element of the sequence to generate a new sequence
+'''
+
+'''
+3. Reduce() Function
+----------------------
+Having the same syntax
+    syntax ==> reduce(function, sequence) # sequence is having multiple elements
+This reduce the sequence of element into a single elemenet once the reduce function is applied
+for instance we have a sequence of [1,2,3,4,5.....] and so on i.e could be lots more
+sum = 1
+sum = sum + 2 ==> 1 + 2 ==> 3
+sum = sum + 3 ==> 3 + 3 ==> 6
+sum = sum + 4 ==> 6 + 4 ==> 10
+sum = sum + 5 ==> 10 + 5 ==> 15
+sum = sum + 6 ==> 15 + 6 ==> 21
+
+To reduce the element we need to specify the logic inside function which is a lambda function and take it as an arguement
+'''
+
+# E.g
+# reduce function needs to be imported otherwise it's not useable 
+from functools import reduce # functools is a module and inside it we have a reduce function and we need to import it
+sequence = [10,20,30,40,50] # specifying some sequence 
+# and once its reuced one can specify functions by adding function inside the bracket below
+# reduce(function, sequence) # specify the syntax "reduce(function, sequence)""
+print(reduce(lambda x,y:x+y, sequence)) # i.e 10+20+30+40+50
+# function is lambda x,y:x+y
+# x and y is an arguement list
+# lambda is keyword
+# x,y is arguement list (x,y functions/values/elements is 10 and 20 arguements)
+# :x+y is expression (i.e taking the x and y and adding it i.e. 10 + 20)
+# print is to give result and always print ie 10+20+30+40+50
+'''
+Output is
+150
+This sequence is used if we want some dummy data
+This is respect to function in python
 '''
