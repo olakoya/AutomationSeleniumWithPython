@@ -151,22 +151,22 @@ To reduce the element we need to specify the logic inside function which is a la
 
 # E.g
 # reduce function needs to be imported otherwise it's not useable 
-from functools import reduce # functools is a module and inside it we have a reduce function and we need to import it
+from functools import reduce # functools is a module and inside it we have a reduce function and we need to import it for this code
 sequence = [10,20,30,40,50] # specifying some sequence 
-# and once its reuced one can specify functions by adding function inside the bracket below
-# reduce(function, sequence) # specify the syntax "reduce(function, sequence)""
+# and once its reduced one can specify functions by adding function inside the bracket below
+# reduce(function, sequence) # specify the syntax "reduce(function, sequence)"
 print(reduce(lambda x,y:x+y, sequence)) # i.e 10+20+30+40+50
 # function is lambda x,y:x+y
 # x and y is an arguement list
 # lambda is keyword
-# x,y is arguement list (x,y functions/values/elements is 10 and 20 arguements)
+# x,y is arguement list (x,y elements is 10 and 20 arguements) function/value is called element in list
 # :x+y is expression (i.e taking the x and y and adding it i.e. 10 + 20)
 # print is to give result and always print ie 10+20+30+40+50
 '''
 Output is
 150
 
-These are very important function not only in automation but to generate sequence
+These are very important functions not only in automation but to generate sequence
 This sequence can also be used if we want some dummy data
 This is respect to function in python
 '''
