@@ -165,6 +165,8 @@ print(reduce(lambda x,y:x+y, sequence)) # i.e 10+20+30+40+50
 '''
 Output is
 150
-This sequence is used if we want some dummy data
+
+These are very important function not only in automation but to generate sequence
+This sequence can also be used if we want some dummy data
 This is respect to function in python
 '''
