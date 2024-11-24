@@ -15,31 +15,31 @@ Types/Structures of Programming Langugages
 -------------------------------------------
 1. Structured: This programe doesn't support object oriented programming principles => C, Python
 2. Object Based: This supports only class and object => VB, VBScript, Python
-3. Object Oriented: This supports OOPS ==> Java, C++, C##, Python
+3. Object Oriented: This supports OOPS ==> Java, C++, C#, Python
 
 In Python, without creating a class one can write a code.
-ALso with class and object one can write a code in Python.
-Python is fully object oriented programming language.
+Also with class and object one can write a code in Python.
+Python is fully an object oriented programming language.
 
 '''
 '''
 Class
 ------
-Class is nothing but a design of blueprint
+Class is nothing but a design of a blueprint
 A blueprint is a design called a class
-In Python everything is treated as an object therefore, we need to create an objec
+In Python everything is treated as an object therefore, we need to create an object
 To create an object one needs a blueprint
 Blueprint is a logical entity that is, it will not occupy space in the memory 
-Except for physical entities and that will only occupy some space in the memory
+Except for physical entities, and that will only occupy some space in the memory
 If you want to build a house we need a design
 The design document will occupy some space
-And this design document is nothing but a class which is a blueprint logical memory
-That is it wouldn't occup any space in the memory
+And this design document is nothing but a class which is a blueprint in logical memory
+That is, it wouldn't occupy any space in the memory
 You create an object and that object is your house
 The house consists of bedroom, kitchen, bathroom, toilet etc and as such one will require some requirements/properties
 A class contains properties and operations
 With the help of a blueprint one will create an object
-From Object there will be a specification
+From object there will be a specification
 And those specifications are called properties and operations of an object
 These properties are also called attributes while operations can be called actions
 With the help of class one creates an object and for the object one will have some specific properties
@@ -64,7 +64,7 @@ How to call a function? We need a function name with an open and close parenthes
 We call a class with the help of class_name and  open and close parentheses ()
 If we want to specify the object we call the class name
 We need a physical existence of a class to create an object.
-Function is an entry point and call it with the help of keyword
+Function is an entry point, and one calls it with the help of keyword
 And calling the class is creating an object
 
         class class_name: # class creation
