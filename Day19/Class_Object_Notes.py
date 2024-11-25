@@ -77,7 +77,13 @@ And calling the class is creating an object
 '''
 Method
 -------
-Method is a function created inside a class
+Method is a function created/declared inside a class
+
+We create function by using a def keyword, function name, open and close parentheses and colon 
+
+By default method has a self parameter which is nothing but a function deeclared inside of method
+
+If self is not declared it becomes an issue because it's property of a particular class
 
 self is a parameter which is referring to class where the method is defined
 
