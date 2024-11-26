@@ -10,7 +10,7 @@ class class_name: # class creation
 
 class Test: # class creation
     a = 10 # class variables
-    def test(self): # function created in a class is called method i.e creating a method
+    def test(self): # function created in a class is called method i.e creating a method and test name is test
         print(self.a) # this is accessing the class variable # "self" is helping to access
 
 t1 = Test() # object
