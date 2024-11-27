@@ -1,23 +1,23 @@
-class Test: # created inside a class and outside a method
-    x = 10 # class variable (created in a class and outside a constructor)
-# In general we can declare within the class directly but from outside of any method
-    def __init__(self):
-        self.y = 20 # instance variable
-        Test.z = 30 # class variable
+# class Test: # created inside a class and outside a method
+#     x = 10 # class variable (created in a class and outside a constructor)
+# # In general we can declare within the class directly but from outside of any method
+#     def __init__(self):
+#         self.y = 20 # instance variable
+#         Test.z = 30 # class variable
 
-    def m1(self):
-        Test.l = 40 # class variable => Inside constructor and method by using class name
+#     def m1(self):
+#         Test.l = 40 # class variable => Inside constructor and method by using class name
 
-    @classmethod
-    def m2(cls): # => Inside classmethod by using either class name or cls variable
-        Test.k = 50 # class variable 
-        cls.m = 60 # class variable => Inside static method by using class name
-# every method that has been written under "class Test:" as seen above regardless of there def function name are all members of "class Test:" class
-# To see the members of the class at once, one needs to use the "Test.__dict__" method ie "Test dictionary constructor" function
-# "Test.__dict__" this will display the method in the form of a dictionary without calling each and every method individually
-# With a print function it will return result from all the method together instead of one by one execution
+#     @classmethod
+#     def m2(cls): # => Inside classmethod by using either class name or cls variable
+#         Test.k = 50 # class variable 
+#         cls.m = 60 # class variable => Inside static method by using class name
+# # every method that has been written under "class Test:" as seen above regardless of there def function name are all members of "class Test:" class
+# # To see the members of the class at once, one needs to use the "Test.__dict__" method ie "Test dictionary constructor" function
+# # "Test.__dict__" this will display the method in the form of a dictionary without calling each and every method individually
+# # With a print function it will return result from all the method together instead of one by one execution
 
-print(Test.__dict__)
+# print(Test.__dict__)
 '''
 Output is
 {'__module__': '__main__', 'x': 10, '__init__': <function Test.__init__ at 0x1005a93a0>, 'm1': <function Test.m1 at 0x1005a9620>,
@@ -42,8 +42,8 @@ So to print (self.y = 20 # instance variable and Test.z = 30 # class variable) w
 "t" reference to call it (like building and house and giving it an address) and print it with the dictionary constructor __dict__
 
 '''
-t = Test()
-print(Test.__dict__)
+# t = Test()
+# print(Test.__dict__)
 '''
 Output is
 {.....'__module__': '__main__', 'x': 10, '__init__': <function Test.__init__ at 0x1063f53a0>, 'm1': <function Test.m1 at 0x1063f5620>,
@@ -62,16 +62,16 @@ class variable then we could see the output of class variable as "z = 30" inside
 So, with the help of the print object variable (print(Test.__dict__)), I will call a method (t.m1()) with adding (print(Test.__dict__)) 
 below it and after calling (def m1(self): Test.l = 40), inside of the method we have class variable (Test.l = 40)
 '''
-t.m1()
-print(Test.__dict__)
+# t.m1()
+# print(Test.__dict__)
 '''
 Output is 
 {.... None, 'z': 30, 'l': 40}
 
 I just called the method t.m1() and print(Test.__dict__) to achieve the above "'l': 40" output
 '''
-t.m2()
-print(Test.__dict__)
+# t.m2()
+# print(Test.__dict__)
 '''
 Output is below after calling the t.m2() method using the object reference variable. Both class variables in the method were displayed
 {.....None, 'z': 30, 'l': 40, 'k': 50, 'm': 60}
@@ -83,8 +83,8 @@ there's a variable however, inside the m1 method and classmethod-m2 method I hav
 These variable can be initialised as class variable once I create an object and call their particular method then it becomes class variable
 
 '''
-Test.n = 70 # class variable => Outside of class by using class name
-print(Test.__dict__)
+# Test.n = 70 # class variable => Outside of class by using class name
+# print(Test.__dict__)
 '''
 {....None, 'z': 30, 'l': 40, 'k': 50, 'm': 60, 'n': 70}
 Because it is a class name it's printed inside the class Test: class dictionary
@@ -99,25 +99,36 @@ class Test:
     a = 10 # class variable
     def __init__(self):
         print(Test.a) # using "Test" as class name and the same data Test.a
+
     def m1(self): # inside constructor I'm accessing the method m1 
         print(Test.a) # inside the method I'm using the same approach
 
 # defining a method and Inside class method by using either cls variable or classname
-@classmethod
-def m2(cls): # defining a class method with cls
-        print(Test.a) # with the help of class name "Test" and with the help of cls I can access the class variable "a = 10"
+    @classmethod
+    def m2(cls): # defining a class method with cls
+        print(cls.a) # with the help of class name "Test" and with the help of cls I can access the class variable "a = 10"
 
 # defining another method using static method / Inside static method by using classname
-@staticmethod
-def m3(): # defining class method with an empty parentheses 
+    @staticmethod
+    def m3(): # defining class method with an empty parentheses 
      print(Test.a) # printing class variable ie printing the value of the variable
 
 # creating test objects / From outside of class by using either object reference or classname
-t = Test()
-# Calling all the method with the help of reference variable
+# Create an instance of Test
+t = Test() # Should print: 10 (from __init__) => Calls the constructor, prints 10
+# Calling all the method with the help of object reference variable
+# Call m1 (instance method)
 t.m1()
+# Call m2 (class method)
 t.m2()
+# Call m3 (static method)
 t.m3()
 print(Test.a)
-
-
+'''
+Output is
+10  # From __init__
+10  # From m1
+10  # From m2
+10  # From m3
+10  # From Test.a
+'''
