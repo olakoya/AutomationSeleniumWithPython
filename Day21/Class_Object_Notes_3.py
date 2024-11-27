@@ -24,13 +24,21 @@ To understand how many copies of class variable is created one need to access th
 
 Access Class Variable
 -----------------------
-1. Inside constructor by using either self or classmate
-2. Inside instance method by using either self or classname
-3. Inside class method by using either cls variable or classname
-4. Inside static method by using classname
-5. From outside of class by using either object reference or classname
+1. Inside constructor by using either self or classmate.
+2. Inside instance method by using either self or classname.
+3. Inside class method by using either cls variable or classname.
+4. Inside static method by using classname.
+5. From outside of class by using either object reference or classname.
 
-Out of all the access listed above what the have in common in CLASSNAME
-It is advisable to always go with the classname wherever we declare class variable
+Out of all the access listed above what the have in common in CLASSNAME.
+It is advisable to always go with the classname wherever we declare class variable.
+'''
 
+'''
+Local Variable
+---------------
+1. Is sometimes use to meet temporary requirements of programmer, one can declare variables inside a method directly.
+Those types of variables are called local variable or temporary variables.
+2. Local variables will be created at the time of method execution and destroyed once method completes.
+3. Local variables of a method cannot be accessed from outside of method.
 '''

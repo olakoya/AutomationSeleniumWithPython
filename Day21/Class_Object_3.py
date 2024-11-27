@@ -100,17 +100,17 @@ class Test:
     def __init__(self):
         print(Test.a) # using "Test" as class name and the same data Test.a
 
-    def m1(self): # inside constructor I'm accessing the method m1 
+    def m1(self): # inside constructor I'm accessing the instance method m1 
         print(Test.a) # inside the method I'm using the same approach
 
 # defining a method and Inside class method by using either cls variable or classname
     @classmethod
     def m2(cls): # defining a class method with cls
-        print(cls.a) # with the help of class name "Test" and with the help of cls I can access the class variable "a = 10"
+        print(Test.a) # with the help of class name "Test" and with the help of cls I can access the class variable "a = 10"
 
 # defining another method using static method / Inside static method by using classname
     @staticmethod
-    def m3(): # defining class method with an empty parentheses 
+    def m3(): # defining static method with an empty parentheses 
      print(Test.a) # printing class variable ie printing the value of the variable
 
 # creating test objects / From outside of class by using either object reference or classname
@@ -125,7 +125,7 @@ t.m2()
 t.m3()
 print(Test.a)
 '''
-Output is
+Outputs are
 10  # From __init__
 10  # From m1
 10  # From m2
