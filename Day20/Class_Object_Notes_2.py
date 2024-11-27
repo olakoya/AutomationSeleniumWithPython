@@ -67,7 +67,7 @@ One can capture datas inside variable and that variable becomes instance variabl
 If a value of the a variable is changing from instance to instance it then becomes INSTANCE VARIABLE
 For every object a separate copy of instance variablse are created
 
-HOW MANY WAYS CAN WE DECLARE INSTNACE VARIABLES?
+HOW MANY WAYS CAN WE DECLARE INSTANCE VARIABLES?
 Declaration of Instance Variables
 ----------------------------------------
 1. Inside constructor by using self variable
