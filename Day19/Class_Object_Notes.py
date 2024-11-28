@@ -40,10 +40,10 @@ The house consists of bedroom, kitchen, bathroom, toilet etc and as such one wil
 A class contains properties and operations
 With the help of a blueprint one will create an object
 From object there will be a specification
-And those specifications are called properties and operations of an object
+And those specifications are called properties (variables) and operations of an object
 These properties are also called attributes while operations can be called actions
-With the help of class one creates an object and for the object one will have some specific properties
-Class consists of variables and methods. In blueprint we specify variables and objects
+With the help of class, one can create an object and for the object one will have some specific properties
+Class consists of variables (properties) and methods (behaviour). In blueprint we specify variables and objects
 Properties or Attributes of objects are called Variables
 '''
 '''
@@ -92,4 +92,16 @@ Once we create a class we can create any number of objects and this objects are 
 To objects we can give reference and this is independent 
 
 With the help of refrence variable we call variables and methods of object
+'''
+
+'''
+Types of Methods
+-----------------
+1. Instance Method
+        This is use to update or retrieve instance-specific data, like modifying a user's profile details
+2. Class Method
+        This is use for for class-wide operations, like keeping track of the total number if the users in a system
+3. Static Method
+        This is use for utitlity functions, like validating a username format with out needing class or instance data
+
 '''

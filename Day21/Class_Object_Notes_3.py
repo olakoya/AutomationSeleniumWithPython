@@ -41,4 +41,5 @@ Local Variable
 Those types of variables are called local variable or temporary variables.
 2. Local variables will be created at the time of method execution and destroyed once method completes.
 3. Local variables of a method cannot be accessed from outside of method.
+4. Example of local variable is storing intern=mediate results in a calculation.
 '''

@@ -2,9 +2,10 @@
 Instance Variables
 --------------------
 They are nothing but an object. (Variable is a memory that stores data)
+Example is a user name or age in an user profile
 One can capture datas inside variable and that variable becomes instance variable
-If a value of the a variable is changing from instance to instance it then becomes INSTANCE VARIABLE
-For every object a separate copy of instance variablse are created
+If the value of the variable is changing from instance to instance it then becomes INSTANCE VARIABLE
+For every object a separate copy of instance variables are created
 
 HOW MANY WAYS CAN WE DECLARE INSTANCE VARIABLES?
 Declaration of Instance Variables
