@@ -51,7 +51,7 @@ E.g
                 def m1(self): ==> for a variable we have a method with parenthese open and close def m1(self):
                     print(self.a) ==> inside the method we are accessing a particular variable which we've defined
 Test() ==> Is an object or an instance of a class
-t ==> on=bject reference variable
+t ==> is an object reference variable
 class ==> blueprint
 object ==> house
 object reference variable ==> house address
@@ -127,6 +127,7 @@ Constructor
 Constructor is a special type of method with unique name __init__(self is optional)
 To declare and initialize instance variables
 Once we create an object constructor is automatically invoked or executed
+per object constructor is executed once
 E.g
         Class Test ==> A class which is a creation/declaration of a blueprint
                 a = 10 ==> inside class we have some class variables a = 10
@@ -134,5 +135,7 @@ E.g
                     print(self.a) ==> inside the method we are accessing a particular variable which we've defined
                 def m1(self): ==> for a variable we have a method with parenthese open and close def m1(self):
                     print(self.a) ==> inside the method we are accessing a particular variable which we've defined
-Test() ==> Is an object or an instance of a class and if constructor is in the method print or output will be 10
+t = Test() ==> Is an object or an instance of a class together with "t" which is an object reference variable
+Test() ==> defining another object calling it Test() will execute the constructor to 10
+Test() ==> Similarly another object in the constructor i.e. def m1(self) will print 10
 '''

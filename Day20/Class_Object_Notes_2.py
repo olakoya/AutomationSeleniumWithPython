@@ -60,9 +60,9 @@ Types of Members of a Class
     iii. Class Methods
 '''
 '''
-Instance Variables
---------------------
-They are nothing but an object. (Variable is a memory that stores data)
+i. Instance Variables
+----------------------
+They are nothing but an object e.g Test(). (Variable is a memory that stores data)
 One can capture datas inside variable and that variable becomes instance variable
 If a value of the a variable is changing from instance to instance it then becomes INSTANCE VARIABLE
 For every object a separate copy of instance variablse are created
