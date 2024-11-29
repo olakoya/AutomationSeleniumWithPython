@@ -1,4 +1,4 @@
-# Checkout Day 19 Class_Object_Notes for Class and Static Notes
+# Checkout Day 19 Class_Object_Notes for Method Notes
 
 class Test: # class name i.e class or blueprint
     def __init__(self): # declaration of constructor name and contains (self) mandatory parameter
