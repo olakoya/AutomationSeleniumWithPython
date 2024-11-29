@@ -1,3 +1,5 @@
+# Checkout Day 19 Class_Object_Notes for Class and Static Notes
+
 class Test: # class name i.e class or blueprint
     def __init__(self): # declaration of constructor name and contains (self) mandatory parameter
         print("Construction Execution") # when "def __init__(self):" is executed it will print construction statement
