@@ -5,6 +5,8 @@ They are nothing but an object. (Variable is a memory that stores data)
 Example is a user name or age in an user profile
 One can capture datas inside variable and that variable becomes instance variable
 If the value of the variable is changing from instance to instance it then becomes INSTANCE VARIABLE
+Then we can create that variable inside a class and inside of a method/constructor
+For total class only one copy of static variable are shared
 For every object a separate copy of instance variables are created
 
 HOW MANY WAYS CAN WE DECLARE INSTANCE VARIABLES?
@@ -14,6 +16,8 @@ Declaration of Instance Variables
 2. Inside Instance method by using self variable
 3. Outside of the class by using object reference variable
 
+Inside a constructor/method there is self variable for declaring and accessing
+Outisde of a class with the help of object reference variable, one can access a self
 '''
 
 

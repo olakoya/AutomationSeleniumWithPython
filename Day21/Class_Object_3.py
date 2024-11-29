@@ -1,3 +1,5 @@
+# Checkout Day 19 Class_Object_Notes for Class, Methods and Object Notes
+
 class Test: # created inside a class and outside a method
     x = 10 # class variable (created in a class and outside a constructor)
 # In general we can declare within the class directly but from outside of any method

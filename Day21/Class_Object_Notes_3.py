@@ -3,6 +3,7 @@ Class and Object - 3
 ---------------------
 Static Variables or Class Variables
 If value of variable is constant or fixed from object to object is called STATIC VARIABLES
+Then we can create that variable inside a class but out of a method/constructor
 For total class only one copy of static variable are shared
 
 Once an object is created, one needs to pass a parameter which is the instance variables
@@ -22,24 +23,29 @@ Class variables are static variables. For each of every object there is a single
 
 To understand how many copies of class variable is created one need to access the class variable.
 
-Access Class Variable
------------------------
+Access Class/Static Variables
+------------------------------
 1. Inside constructor by using either self or classmate.
 2. Inside instance method by using either self or classname.
 3. Inside class method by using either cls variable or classname.
 4. Inside static method by using classname.
 5. From outside of class by using either object reference or classname.
 
-Out of all the access listed above what the have in common in CLASSNAME.
+Out of all the access listed above what they have in common in CLASSNAME.
 It is advisable to always go with the classname wherever we declare class variable.
+
+We use classname for declaration and accessing inside and outside of a class
 '''
 
 '''
 Local Variable
 ---------------
-1. Is sometimes use to meet temporary requirements of programmer, one can declare variables inside a method directly.
+1. It is sometimes use to meet temporary requirements of programmer, one can declare variables inside a method directly.
 Those types of variables are called local variable or temporary variables.
 2. Local variables will be created at the time of method execution and destroyed once method completes.
 3. Local variables of a method cannot be accessed from outside of method.
-4. Example of local variable is storing intern=mediate results in a calculation.
+4. Example of local variable is storing intermediate results in a calculation.
+5. Local variables only respond to the function and to store in local 
+6. Before completing the execution of a program one will get a result and to store the result one needs a temporary requirements
+7. To meet temporary requirements programmers declare a variable inside a method without self/class name
 '''
