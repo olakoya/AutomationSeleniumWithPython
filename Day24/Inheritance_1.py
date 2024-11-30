@@ -31,31 +31,31 @@ By Composition (HAS-A Relationship)
 1. By using classname or object reference variable one can access members of one class inside another class
 
 '''
-# # 1. 
-# # E.g Creating an object inside another class
-# class A: 
-#     c = 10 # class variable
-#     def __init__(self): # constructor
-#         self.d = 20 # instance variable
-#     def m1(self): # instance method
-#         print("This is method class A") # calling class A
+# 1. 
+# E.g Creating an object inside another class
+class A: 
+    c = 10 # class variable
+    def __init__(self): # constructor
+        self.d = 20 # instance variable
+    def m1(self): # instance method
+        print("This is method class A") # calling class A
 
-# # below is how to access the above class, and it's by creating an object of class A
-# class B:
-#     def __init__(self):
-#         self.a = A() # this object reference variable is an instance variable that is passing an object inside another class
-#     def m2(self):
-#        self.a.m1() # accessing a method of class
-#        print(self.a.d+self.a.c)
+# below is how to access the above class, and it's by creating an object of class A
+class B:
+    def __init__(self):
+        self.a = A() # this object reference variable is an instance variable that is passing an object inside another class
+    def m2(self):
+       self.a.m1() # accessing a method of class
+       print(self.a.d+self.a.c)
 
-# b = B()
-# b.m2()
+b = B()
+b.m2()
 
-# '''
-# Output is
-# This is method class A
-# 30
-# '''
+'''
+Output is
+This is method class A
+30
+'''
 
 # 2. 
 # E.g Passing object reference as an arguement
