@@ -138,5 +138,4 @@ Types of Inheritance in Python;
 
 6. Cyclic Inheritance but not supported in Python
 
-
 '''

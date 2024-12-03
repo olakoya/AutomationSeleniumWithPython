@@ -231,7 +231,7 @@ class Car(Vehicle): # SINGLE INHERITANCE
     def drive(self):
         print("Car is driving")
 
-class Bike(Vehicle): # HIERARCHIAL INHERITANCE
+class Bike(Vehicle): # HIERARCHICAL INHERITANCE
     def ride(self):
         print("Bike is riding")
 
@@ -273,8 +273,8 @@ class C(P2,P1): # A child not knowing which method to call first can be confusin
 '''
 # -------------------------------------------------------------
 '''
-Cyclic Inheritance
--------------------
+6. Cyclic Inheritance
+   -------------------
 i. This is the concept of inheriting members between the same class or from another class in a cyclic manner is called Cyclic 
 or Circular Inheritance.
 ii. In Cyclic or Circular Inheritance the child and parent roles becomes ambiguous which would result in undefined class names.

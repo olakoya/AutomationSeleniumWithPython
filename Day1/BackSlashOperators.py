@@ -20,7 +20,12 @@ Description of a method or function in Pycharm
 3. Press left button on mouse
 4. Perform 2+3 together
 '''
+
+
+
 '''
+Course Modules
+----------------
 Manual Testing concepts
 Python
 Selenium
