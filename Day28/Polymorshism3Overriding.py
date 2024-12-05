@@ -65,7 +65,7 @@ After adding line 56 Output becomes
 Parent Constructor
 Child Constructor
 
-E.g 2
+E.g 2 from real life Scenario
 '''
 class Employee:
     def __init__(self, name, employee_id): # Employee constructor has name and employee_id
