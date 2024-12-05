@@ -6,14 +6,14 @@ child class should use.
 
 MRO (Method Resolution Order)
 -----------------------------
-To get the order for Diamond Problem we need "mro() method"
-The mro follow a particular principle which is called DLR
+To get the order for Diamond Problem we need "mro() method".
+The mro follow a particular principle which is called DLR.
 
 DLR means Dept First Left to Right e.g
 If a class C(P1,P2) is executed ==> P1 will be considered first
 If a class C(P2,P1) is executed ==> P2 will be considered first
 
-A Parent class can't be called or accessed bferoe a child class
+A Parent class can't be called or accessed before a child class
 E.g
 '''
 class A:

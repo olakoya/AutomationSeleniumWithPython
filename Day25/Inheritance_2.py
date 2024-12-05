@@ -3,8 +3,8 @@ Inheritance
 ------------
 1. Inheritance is acquiring all members of one class inside another class
 2. It is a relationship between a parent class and child class
-    i. A paraent class can also be called super or base class
-    ii. While a child class can be called drive or suclass class
+    i. A parent class can also be called super or base class
+    ii. While a child class can be called drive or subclass class
 
 Types of Inheritance
 ----------------------
@@ -38,6 +38,7 @@ Child method
 # -------------------------------------------------------------
 '''
 2. Multilevel Inheritance 
+---------------------------
     Class A (Grand-Parent) <----- Class B (Parent) <---- Class C (Child)
 
     Is the concept of inheriting the memebers from multiple classes to single class with the concept of one after another known 
@@ -70,6 +71,7 @@ Child method
 # -------------------------------------------------------------
 '''
 3. Hierarchical Inheritance 
+----------------------------
                      <---- Class A (Child)
     Class A (Parent) <---- Class B (Child)
                      <---- Class C (Child)
@@ -116,6 +118,7 @@ Child 3 method
 # -------------------------------------------------------------
 '''
 4. Multiple Inheritance 
+------------------------
     Class A (Parent)
                        \
                          <---- Class C (Child)
@@ -152,7 +155,7 @@ Child method
 # -------------------------------------------------------------
 '''
 5. Hybrid Inheritance 
-   -------------------
+----------------------
               Class A (Grand-Parent)
                     /       \
     Class B (Parent)        Class C (Parent)
@@ -256,7 +259,7 @@ vehicle started
 Diamond Problem
 ----------------
 This is if the same method is inherited from both parent classes (Multiple Inheritance), it creates ambiguity about which method
-the child class should use then Python will always consider the order (MRO - Method Resolution Order) of Parent classes in the 
+the child class should use, then Python will always consider the order (MRO - Method Resolution Order) of Parent classes in the 
 declaration of the child
 E.g 
 class P1:

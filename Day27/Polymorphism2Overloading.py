@@ -1,7 +1,10 @@
 '''
-2. Overloading Philosophy
----------------------------
+2. Overloading Philosophy (variables, methods, constructor)
+------------------------------------------------------------
 This is the ability to use the same operators or methods for different purposes with different implementations
+
+Types of Overloading
+---------------------
 
     i. Operator Overloading
     ------------------------
