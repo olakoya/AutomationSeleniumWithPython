@@ -18,10 +18,10 @@ Types of Overriding
 
     1. Method Overriding
     ---------------------
-    Whatever members available in the parent class are available to child class by default.
-    Through inheritance a child can acess a parent class.
-    And if a child class isn't satisfied with parent class implementation then the child class is allowed ot redefine parent 
-    class members based on business requirements is called Method Overiding.
+    This means whatever members available in the parent class are also available to child class by default.
+    Through inheritance a child can access a parent class.
+    And if a child class isn't satisfied with parent class implementation, then the child class is allowed to redefine parent 
+    class members based on business requirements and this is called Method Overiding.
 E.g
 '''
 class RBUK:
@@ -37,14 +37,14 @@ class HSBC(RBUK):
         return 12
 '''
 No output because there weren't an execution due to not having a parameter and without parameter there's no arguement
-and for that reasons an object or object reference variable wasn't created.
+and for that reason an object or object reference variable wasn't created.
 '''
 #----------------------------------------------
 
 '''
     2. Constructor Overriding
     --------------------------
-    As that of Method Overriding if a Constructor is redefined in a class as for the business requirements
+    As that of Method Overriding, a Constructor is redefined in a class for business requirements
 E.g
 '''
 class P: # Parent class
@@ -56,7 +56,7 @@ class C(P): # Child class
         super ().__init__() # And to use the parent method inside child class 'super' method is used
         print("Child Constructor")
 
-c = C(10) # creating an object C() and passing value '10' to the parameter to 'a' in child class
+c = C(10) # creating an object C() and passing value '10' to the parameter 'a' in child class
 '''
 Output is 
 Child Constructor
@@ -83,7 +83,7 @@ class Manager(Employee): # 'Manager' is also an employee but belongs to another 
     def display_details(self):
         return f"{super().display_details()}, Department: {self.department}"
 
-# Both Manager and Developer inherited method from Parent 'Employee' class
+# Both Manager above and Developer below inherited method from Parent 'Employee' class
 # And because the chain constructor in the parent isn't staifisying the child 1 and child 2 have created their own constructors
 
 class Developer(Employee): # 'Developer' is an employee with the knowledge of 'programming_language'
