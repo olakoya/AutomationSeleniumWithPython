@@ -14,7 +14,7 @@ For Abstract we have 2 important things to Abstract
 -------------------
 Sometimes when we have no idea about implementation but still can declare a method
 
-Abstract methods has only declaration but no implementation
+Abstract method has only declaration but no implementation
 Child classes are responsible for creating/providing an implementation for parent class abstract methods
 To declare abstract method one needs to use a decorator, that is @abstractmethod decorator
 From ABC Module we can call Abstract Method decorator (@abcmodule ====> @abstractmethod)
@@ -43,7 +43,7 @@ from abc import ABC, abstractmethod # ABC and abstractclass are from abc module
 
 class Fruit(ABC): # this is abstract class, and specifying parent class as 'ABC' and base class for all classes
     @abstractmethod # before any method one needs to declares an abstract method
-    def taste(self): # fruit class contining abstract methon in lines 35 and 36
+    def taste(self): # fruit class containing abstract method in lines 35 and 36
         pass # non-abstract method
 
 '''
@@ -60,9 +60,9 @@ class Fruit(ABC): # this is abstract class, and specifying parent class as 'ABC'
 -------------------------------------------
 The class Test below is not inherited from the ABC class and doesn't have any method it's an unimplented and impartial class
 '''
-# class Test:
-#     pass
-# t = Test () # creating an object of the respected class
+class Test:
+    pass
+t = Test () # creating an object of the respected class
 '''
 Output is blank and no error
 '''
@@ -74,9 +74,9 @@ The below class is imported from the ABC module and inherited from the ABC class
 '''
 from abc import ABC
 
-# class Test(ABC):
-#     pass
-# t = Test () # creating an object of the respected class
+class Test(ABC):
+    pass
+t = Test () # creating an object of the respected class
 '''
 Output is blank and no error
 '''
@@ -86,13 +86,13 @@ Output is blank and no error
 --------------------------------------
 This class is inherited, implemented and also contain an abstract method
 '''
-# from abc import ABC
+from abc import ABC
 
-# class Test(ABC): # abstract class containing an abstract method
-#     @abstractmethod
-#     def m1(self): # defining a method
-#         pass
-# t = Test () # creating an object of the respected class
+class Test(ABC): # abstract class containing an abstract method
+    @abstractmethod
+    def m1(self): # defining a method
+        pass
+t = Test () # creating an object of the respected class
 # above is a TypeError
 '''
 Output is 
@@ -108,14 +108,14 @@ TypeError: Can't instantiate abstract class Test without an implementation for a
 This class wihtout inherit and doesn't contain anything
 E.g
 '''
-# from abc import abstractmethod
+from abc import abstractmethod
 
-# class Test: # abstract class containing an abstract method
-#     @abstractmethod
-#     def m1(self): # defining a method
-#         pass
-# t = Test () # creating an object of the respected class
-# t.m1()
+class Test: # abstract class containing an abstract method
+    @abstractmethod
+    def m1(self): # defining a method
+        pass
+t = Test () # creating an object of the respected class
+t.m1()
 '''
 Output is blank
 '''
@@ -123,7 +123,7 @@ Output is blank
 Conclusion
 ------------
 - If a class contains at least one abstract method and if we are extending ABC class then instantiation is not possible.
-- It it's Abstract class with abstract method instantiation is not possible.
+- If it's Abstract class with abstract method instantiation is not possible.
 - Parent class abstract methods should be implemented in child classes.
 - Otherwise we cannot instantiate child class.
 - If we are not creating child class object then we won't get any error.
