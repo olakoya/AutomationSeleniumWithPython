@@ -52,12 +52,12 @@ Output is
 '''
 
 # testing outside of a class
-# Test.x() 
+Test.x() 
 # because the other attributes are protected and private they weren't part of the suggested option after the dot . since it's outside of the class
 
-# print(Test.x)
-# print(Test._y)
-# print(Test.__z)
+print(Test.x)
+print(Test._y)
+print(Test.__z)
 '''
 Output is
 10
