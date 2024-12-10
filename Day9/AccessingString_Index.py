@@ -51,21 +51,21 @@ s = "welcome"
 w   e   l   c   o   m   e
 -7  -6  -5  -4  -3  -2  -1
 '''
-# I want to a data or character and specify single character
+# I want a data or character and specify single character
 # To loacte the index in the above string code, code to use is 
-# s [3] # accessing the character by using the index value [3]
-# print(s[3])
-# '''
-# Output is 
-# c
-# '''
-# print(s[-6])
-# '''
-# Output is 
-# e
-# '''
-# print(s[20])
-# print(s[-20])
+s [3] # accessing the character by using the index value [3]
+print(s[3])
+'''
+Output is 
+c
+'''
+print(s[-6])
+'''
+Output is 
+e
+'''
+print(s[20])
+print(s[-20])
 '''
 Output for both are
 IndexError: string index out of range
@@ -74,7 +74,7 @@ It throws indexerror because no range of index.
 
 If we are trying to access character of a string without range of index then we will get Index Error
 0 < x < len(str)-1
-In Fordward index value for welcome, equation will be 0 < x < 7-1 i.e 0<x<6
+In Forward index value for welcome, equation will be 0 < x < 7-1 i.e 0<x<6
 And because index value is[20] isn't in a range of 0 < 20 < 6 it outputs an "indexerror" result
 
 In Reverse index value for welcome, equation will be -1 < -20 < -7 
@@ -86,10 +86,10 @@ String is very important to datatype
 
 # Writing a program to accept some strings from keybaord and display it's character in index wise
 
-# s = input("Enter some string = ") # input method to use and storing some strings inside a variable
-# # To access sequence inside a variable we use for loop
-# for x in s:
-#     print(x)
+s = input("Enter some string = ") # input method to use and storing some strings inside a variable
+# To access sequence inside a variable we use for loop
+for x in s:
+    print(x)
 '''
 Output is
 Enter some string = Ola
@@ -103,14 +103,14 @@ M   A   D   H   A   V   I
 -7  -6  -5  -4  -3  -2  -1      reverse index numbers
 
 I want to print in index characters and what to do is
-i = 0 (as per 1st charcter from the forward index number)
+i = 0 (as per 1st character from the forward index number)
 len = 7 (0-7 = 7 i.e. total number of MADHAVI characters in the forward direction)
 1-7 = -6 (i.e. total number of MADHAVI characters in the reverse direction)
 '''
 s = input("Enter some string = ")
 i = 0
 for x in s:
-    print(i,i-len(s),x) # i.e. print(0,0-711(s),x)
+    print(i,i-len(s),x) # i.e. print(0,0-7(s),x)
     i = i+1 # 0+1
 '''
 0 -7 M

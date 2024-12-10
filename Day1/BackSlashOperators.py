@@ -38,3 +38,17 @@ Selenium ==> Python + Playwright(Microsoft)
 Cypress ==> Open Source
 DE ==> AI
 '''
+
+
+
+s = input("Enter some string = ")
+i = -1
+for x in s[::-1]:
+    print(i,len(s)+i,x)
+    i = i-1
+'''
+Enter some string = Ola
+-1 2 a
+-2 1 l
+-3 0 O
+'''
