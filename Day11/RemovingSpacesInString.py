@@ -9,13 +9,13 @@ There are 3 different functions to remove spaces from String datatype
 String is immutable datatype i.e any changes made is a new string(new object created) which is storing another variable
 E.g:
 '''
-# name = " John Cena "
-# sname = name.rstrip()
-# name.rstrip()
-# sname = name.lstrip()
-# sname = name.strip()
-# print(name)
-# print(sname)
+name = " John Cena "
+sname = name.rstrip()
+name.rstrip()
+sname = name.lstrip()
+sname = name.strip()
+print(name)
+print(sname)
 '''
 Output is
  John Cena 
@@ -47,16 +47,16 @@ s1 = 'shyla'
 s2 = "Ravindra'
 E.g
 '''
-# s1 = "john"
-# s2 = "cena"
-#
-# print(s1<s2) # False
-# print(s1>s2) # True
-# print(s1<=s2) # False
-# print(s1>=s2) # True
-#
-# print(s1==s2) # False
-# print(s1!=s2) # True
+s1 = "john"
+s2 = "cena"
+
+print(s1<s2) # False
+print(s1>s2) # True
+print(s1<=s2) # False
+print(s1>=s2) # True
+
+print(s1==s2) # False
+print(s1!=s2) # True
 '''
 Output is
 False
@@ -67,8 +67,8 @@ False
 False
 '''
 # E.g 2
-# print(ord('j')) # 106
-# print(ord('c')) # 99
+print(ord('j')) # 106
+print(ord('c')) # 99
 '''
 Output is 
 106
@@ -88,15 +88,15 @@ iv. rindex() ==> returns index of a substring where it has last occurred
                 When substring isn't available it returns ValueError
 E.g
 '''
-# s = "abababababababaabbabbaab"
-# sub = 'a'
-# sub = 'c'
-#
-# print(s.find(sub)) # Output is 0
-# print(s.index(sub)) # Output is 0
-#
-# print(s.rfind(sub)) # Output is 22
-# # print(s.rindex(sub)) # Output is 22
+s = "abababababababaabbabbaab"
+sub = 'a'
+sub = 'c'
+
+print(s.find(sub)) # Output is 0
+print(s.index(sub)) # Output is 0
+
+print(s.rfind(sub)) # Output is 22
+print(s.rindex(sub)) # Output is 22
 '''
 Output after adding line 93 to execute lines 95 & 98 is 
 -1
