@@ -34,7 +34,7 @@ John Cena
 '''
 
 '''
-Comparision of Strings
+Comparison of Strings
 ------------------------
 10 20 
 lexicographyically

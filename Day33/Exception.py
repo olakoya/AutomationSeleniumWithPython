@@ -16,19 +16,19 @@ These are errors that occur due to invalid syntax
 2. Runtime Errors
 ------------------
 When writing logic and due to memory issues this error is called runtime error
-That is errors due to wrong end user input, memory problems and invalid programming logic
+That is, errors due to wrong end user input, memory problems and invalid programming logic
 
 Who's responsible for correcting these errors?
 -------------------------------------------------
 1. Syntax Errors: Developers are responsible for the correction of syntax errors
-After correction errors then codes will be executed
+After correcting errors then codes will be executed
 
 2. Runtime Errors: Exceptions handling applicable to runtime errors
 '''
 
 # Examples of SyntaxError
 # -------------------------
-# x = 10
+x = 10
 # if x ==10
 #     print("Hello")
 '''
@@ -41,16 +41,15 @@ SyntaxError: invalid syntax
 Programmer is the only one permitted to correct such error
 '''
 # Corrected version
-# x = 10
-# if x ==10:
-#     print("Hello")
+x = 10
+if x ==10:
+    print("Hello")
 '''
 Output is
 Hello
 '''
 # Example 2
 # print "Ola"
-
 '''
 Output is 
 line 51
@@ -59,22 +58,21 @@ line 51
 SyntaxError: Missing parentheses in call to 'print'. Did you mean print("Ola")?
 '''
 # Corrected Version
-# print("Ola")
+print("Ola")
 '''
 Output is
 Ola
 '''
-
 # Examples of Runtime Errors
 # ---------------------------
 # 1
-# print(10/2)
+print(10/2)
 '''
 Output ia
 5.0
 '''
 # 2
-# print(10/0)
+print(10/0)
 '''
 Output is
 line 76, in <module>
@@ -82,7 +80,7 @@ line 76, in <module>
 ZeroDivisionError: division by zero
 '''
 # 3
-# print(10/"ten")
+print(10/"ten")
 '''
 Output is
 line 85, in <module>
@@ -91,15 +89,15 @@ TypeError: unsupported operand type(s) for /: 'int' and 'str'
 '''
 # 4
 # reading an input from user
-# input("Enter the data = ")
+input("Enter the data = ")
 '''
 Output is
 Enter the data =
 '''
 # 5
 # convert the string input data to integer datatype
-# x = int(input("Enter the data = "))
-# print(x)
+x = int(input("Enter the data = "))
+print(x)
 '''
 Output is 
 Enter the data = 10
@@ -130,7 +128,7 @@ Types of Runtime Errors
 6. SleepingError
 7. TyrePuncturedError
 
-Runtime Errors are called Logical Errors or Exceptions
+Runtime Errors are called ==> Logical Errors or Exceptions
 All runtime or exceptions error is an object of corresponding class
 '''
 # How to handle this error?
