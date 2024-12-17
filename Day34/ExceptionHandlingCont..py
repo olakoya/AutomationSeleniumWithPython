@@ -55,9 +55,11 @@ this is the end of the program
 
 E.g 3
 '''
+try:
     x = int(input("Enter 1st Number: "))
     y = int(input("Enter 2nd Number: "))
     print(x/y)
+except
 '''
 Output is
 Enter 1st Number: 10
