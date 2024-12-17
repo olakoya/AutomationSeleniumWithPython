@@ -15,13 +15,13 @@ Based on the 2 handling Errors above, it's important thing to know the below for
 2. If exception handling code specify except block
 E.g
 '''
-# print("this is the starting of the program")
-# try: # when try block is used "except" block is use as a default
-#     # print(x) # accessing variable and a line block of risky code
-#     print(10 / 0)
-# except:
-#     print("Exception occurred")
-# print("this is the end of the program")
+print("this is the starting of the program")
+try: # when try block is used "except" block is use as a default
+    # print(x) # accessing variable and a line block of risky code
+    print(10 / 0)
+except:
+    print("Exception occurred")
+print("this is the end of the program")
 '''
 Output is 
 line 19, in <module>
@@ -38,7 +38,7 @@ Exception occurred
 this is the end of the program
 E.g 2
 '''
-# print(10/0)
+print(10/0)
 '''
 Output is
 line 40, in <module>
@@ -55,9 +55,9 @@ this is the end of the program
 
 E.g 3
 '''
-    # x = int(input("Enter 1st Number: "))
-    # y = int(input("Enter 2nd Number: "))
-    # print(x/y)
+    x = int(input("Enter 1st Number: "))
+    y = int(input("Enter 2nd Number: "))
+    print(x/y)
 '''
 Output is
 Enter 1st Number: 10
@@ -85,19 +85,19 @@ ii. ValueError
 
 E.g 4
 '''
-# try: # using try block
-#     x = int(input("Enter 1st Number: "))
-#     y = int(input("Enter 2nd Number: "))
-#     print(x/y)
-#
-# except ZeroDivisionError: #using exception block because the code can also cause exception
-#     print("Cannot divide by Zero")
-#
-# except ValueError:
-#     print("Please provide an integer value only")
-#
-# except:
-#     print("Exception Occurred")
+try: # using try block
+    x = int(input("Enter 1st Number: "))
+    y = int(input("Enter 2nd Number: "))
+    print(x/y)
+
+except ZeroDivisionError: #using exception block because the code can also cause exception
+    print("Cannot divide by Zero")
+
+except ValueError:
+    print("Please provide an integer value only")
+
+except:
+    print("Exception Occurred")
 '''
 Output is
 Enter 1st Number: 10
@@ -110,16 +110,16 @@ Cannot divide by Zero
 
 E.g 5
 '''
-# try:
-#     x = int(input("Enter 1st Number: "))
-#     y = int(input("Enter 2nd Number: "))
-#     print(x/y)
-#
-# except (ZeroDivisionError, ValueError):
-#     print("Please provide valid data")
-#
-# except:
-#     print("Exception Occurred")
+try:
+    x = int(input("Enter 1st Number: "))
+    y = int(input("Enter 2nd Number: "))
+    print(x/y)
+
+except (ZeroDivisionError, ValueError):
+    print("Please provide valid data")
+
+except:
+    print("Exception Occurred")
 '''
 Output is
 Enter 1st Number: 20
@@ -132,16 +132,16 @@ Enter 2nd Number: 2
 
 E.g 6
 '''
-# try:
-#     x = int(input("Enter 1st Number: "))
-#     y = int(input("Enter 2nd Number: "))
-#     print(x/y)
-#
-# except (ZeroDivisionError, ValueError) as msg: # as is an alias
-#     print("Please provide valid data", msg)
-#
-# except:
-#     print("Exception Occurred")
+try:
+    x = int(input("Enter 1st Number: "))
+    y = int(input("Enter 2nd Number: "))
+    print(x/y)
+
+except (ZeroDivisionError, ValueError) as msg: # as is an alias
+    print("Please provide valid data", msg)
+
+except:
+    print("Exception Occurred")
 '''
 Output is
 Enter 1st Number: 10
@@ -170,12 +170,12 @@ iv. else which is when no exceptions ==> occurred
 
 E.g
 '''
-# try:
-#     print(10/2)
-# except:
-#     print("Exception Occur")
-# finally:
-#     print("Always executed")
+try:
+    print(10/2)
+except:
+    print("Exception Occur")
+finally:
+    print("Always executed")
 '''
 Output is for 10/0
 Exception Occur
@@ -188,14 +188,14 @@ Always executed
 
 E.g 2
 '''
-# try:
-#     print(10/0)
-# except:
-#     print("Exception Occur")
-# else:
-#     print("No exceptions Occurred")
-# finally:
-#     print("Always Executed")
+try:
+    print(10/0)
+except:
+    print("Exception Occur")
+else:
+    print("No exceptions Occurred")
+finally:
+    print("Always Executed")
 '''
 Output is
 5.0
