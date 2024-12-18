@@ -10,8 +10,8 @@ How to Handle the Errors are
 2. Except Block
 
 Based on the 2 handling Errors above, it's important thing to know the below for the Errors;
-!. Any code which causes exception us called a Risky code
-    The risky code can be placed/kept inside Try block
+!. Any code which causes exception is called a Risky code
+    The risky code can be placed/kept inside the Try block
 2. If exception handling code specify except block
 E.g
 '''
@@ -59,8 +59,9 @@ try:
     x = int(input("Enter 1st Number: "))
     y = int(input("Enter 2nd Number: "))
     print(x/y)
-except
-'''
+except:
+
+    '''
 Output is
 Enter 1st Number: 10
 Enter 2nd Number: 20
@@ -87,6 +88,7 @@ ii. ValueError
 
 E.g 4
 '''
+
 try: # using try block
     x = int(input("Enter 1st Number: "))
     y = int(input("Enter 2nd Number: "))
