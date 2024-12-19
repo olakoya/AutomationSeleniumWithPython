@@ -115,7 +115,7 @@ class Test:
     def m3(): # defining static method with an empty parentheses 
      print(Test.a) # printing class variable ie printing the value of the variable
 
-# creating test objects / From outside of class by using either object reference or classname
+# creating testingfile objects / From outside of class by using either object reference or classname
 # Create an instance of Test
 t = Test() # Should print: 10 (from __init__) => Calls the constructor, prints 10
 # Calling all the method with the help of object reference variable

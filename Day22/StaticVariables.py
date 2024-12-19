@@ -22,9 +22,9 @@ class Test:
         print(a)
         print(self.b) # print the b value
         print(Test.b+100) # adding mathematical syntax/operation of +100
-Test(10) # object accessing the test value "a"
-Test(20) # object accessing the test value "a"
-Test(30) # object accessing the test value "a"
+Test(10) # object accessing the testingfile value "a"
+Test(20) # object accessing the testingfile value "a"
+Test(30) # object accessing the testingfile value "a"
 '''
 Output is 
 10 => printing the class variable value 'a' 

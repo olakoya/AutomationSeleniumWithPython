@@ -168,7 +168,7 @@ Enter 2nd Number: 3
 Aside from 'try' and 'except' blocks, blocks that can also be used are;
 iii. finally which is always ==> executed. 
         finally is also use as a clean up code
-    Example is that after automating a test case that requires the database and after automation database is disconnected that's
+    Example is that after automating a testingfile case that requires the database and after automation database is disconnected that's
     what is called clean up code
 iv. else which is when no exceptions ==> occurred
 

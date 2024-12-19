@@ -19,7 +19,7 @@ Object and instance are the same
 
 class Test: # class creation
     a = 10 # class variables
-    def test(self): # function created in a class is called method i.e creating a method
+    def testingfile(self): # function created in a class is called method i.e creating a method
         print(self.a) # this is accessing the class variable # "self" is helping to access and mandatory parameter
 
 t1 = Test() # object
@@ -31,7 +31,7 @@ With the reference to t1 = Test() variable, one can have access to the members o
 What comprises of a class is 1. variable, 2. method, 3. object reference variable
 t1 reference is a variable because it's pointing to the Test () object
 Test () object represent each house are an independent object
-With the reference of object reference t1 one can access the members of the class i.e method (a=10) and print(t1.a) and t1 test()
+With the reference of object reference t1 one can access the members of the class i.e method (a=10) and print(t1.a) and t1 testingfile()
 One couldn't access is previously without the construction because it's a special type of method and used for specail purposes
 Once we create an object t1 = Test() by default and construction is located inside the class by the default it will be executed
 Each object t1 is independent of each other i.e. t1.....t8

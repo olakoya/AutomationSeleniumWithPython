@@ -3,7 +3,7 @@
 class Test: # class name i.e class or blueprint
     def __init__(self): # declaration of constructor name and contains (self) mandatory parameter
         print("Construction Execution") # when "def __init__(self):" is executed it will print construction statement
-    def m1(self): # simple method and (self) is a simple mandatory parameter and test name is m1
+    def m1(self): # simple method and (self) is a simple mandatory parameter and testingfile name is m1
         print("Method Execution") # print statement
 t1 = Test() # a contsructor is name calling a particular class and this attempt is called an object. One can have many
 t2 = Test() # t1 is a reference variable
