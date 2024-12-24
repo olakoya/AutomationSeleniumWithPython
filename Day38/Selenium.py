@@ -40,6 +40,15 @@ Setting Up and Installation
 2. Pycharm ==> Clients Library
 Selenium WebDriver ==> Automation tools
 
-Opening on Pycharm for new project
+i. Opening on Pycharm for new project
+ii. Install Pip package name using terminal
+        Pip list will show and check all packages installed 
+iii. Pycharm project settings
+        Go to pycharm and click on settings
+        Click on Project: Selenium to expand it
+        Then click on Python Interpreter
+        Click on plus + signs to add or search for available Packages
+iv. Requirements.txt file ==> pom.xml
+
 
 '''
