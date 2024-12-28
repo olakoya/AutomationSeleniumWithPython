@@ -31,28 +31,28 @@ E.g
 '''
 
 # 1st - open the file in write mode
-# f = open("abc.txt",'w')
-#
-# # assign variable f above to perform
-#
-# # getting name of the file
-# print(f.name)
-#
-# # which mode the file is opened
-# print(f.mode)
-#
-# # checking if it is readable
-# print(f.readable())
-#
-# # checking if it is writable
-# print(f.writable())
-#
-# # checking if it is close
-# print(f.closed)
-#
-# # closing the file
-# f.close()
-# print(f.closed)
+f = open("abc.txt",'w')
+
+# assign variable f above to perform
+
+# getting name of the file
+print(f.name)
+
+# which mode the file is opened
+print(f.mode)
+
+# checking if it is readable
+print(f.readable())
+
+# checking if it is writable
+print(f.writable())
+
+# checking if it is close
+print(f.closed)
+
+# closing the file
+f.close()
+print(f.closed)
 
 '''
 Output is 
@@ -94,10 +94,10 @@ To write in a new line one needs to specify in the code
 E.g
 '''
 f = open("abc.txt",'w')
-f.write("Learning\nPython\nis\nvery\neasy") # adding \n to write in a new line accordingly
+f.write("Learning\nPython\nis\nvery\neasy") # adding \n is to write in a new line accordingly
 f.close()
 '''
-Output is that it's overwrite the previous execution in lines 82 to 86
+Output is that it's overwrite the previous execution in lines 82 to 86 and from output in line 90 to the one below
 Learning
 Python
 is
@@ -125,7 +125,7 @@ easy
 ------------------------------------------
 How to Read character Data from Text Files
 -------------------------------------------
-They are specific method to do that
+There are specific method to do that;
 1. read() ==> will read total data from the file
 2. read(n) ==> will read number of lines 'n' characters from the line
 3. readline() ==> will read only one line
@@ -197,10 +197,10 @@ Learning P
 f = open(r"/Users/olakoya/Desktop/automationwithpython/Day27/testingfile",'r')
 print(f.readline())
 f.close()
-# '''
-# Output is
-# Learning Python is very easy
-# '''
+'''
+Output is
+Learning Python is very easy
+'''
 
 #--------------------------------------------------------
 # Reading multiple lines

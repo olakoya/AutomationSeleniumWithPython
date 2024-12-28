@@ -6,8 +6,8 @@ To perform any operation one needs to specify:
 2. Actions
 3. Close()
 
-An operation must always close the file at the end of each operation and without which it will be impossible to save and
-might encounter have issue.
+An operation must always close the file at the end of each operation and without which, it will be impossible to save and
+might encounter many issues.
 
 One can use both open and close method without which it's impossible to execute the operation
 
@@ -28,7 +28,7 @@ v. With statement there's no need to close () as the statement will take care of
 E.g
 '''
 # with statement
-# with the help of f = open variable one would be able to perform this operation ("abc.txt", "w") as seen below
+# with the help of 'f' variable = open variable one would be able to perform this operation ("abc.txt", "w") as seen below
 f = open("abc.txt", "w")
 # to specify with "with" statement one needs to use 'with' at the beginning of the operation
 with open("abc.txt", "w") as f: # this is alias 'as' i.e. given a name for open("abc.txt", "w") as 'f' (file)
@@ -54,9 +54,9 @@ The 'true' output displayed that the file execution is closed
 '''
 Without close() method below might happened
 --------------------------------------------
-Exceptions is that file will not properly closed
+Exceptions is that file will not properly close
 There maybe chance of missing some data while
-Close () must be specify all the time
+Close () must be specified all the time
 
 Even if the .txt file isn't created one will be created during the time of execution
 '''
@@ -73,7 +73,7 @@ print(os.path.isfile("abcd.txt")) # 'isfile' is a function - to check if file is
 Output is 
 False
 
-Returns 'False' because there abcd.txt file isn't available and next is to 'if' statement below
+Returns 'False' because the abcd.txt file isn't available and next is to 'if' statement below
 '''
 if os.path.isfile("abcd.txt"):
     with open("abcd.txt", "r") as f:
@@ -95,11 +95,12 @@ else:
 Output is
 File is available
 '''
-# Reading a contents from an existing file, e.g
+
+# E.g Reading a content from an existing file
 try:
     with open("abcd.txt","r") as f:
         print(f.readlines())
-# Whatever code causes an exception is called risk assessing code so line 73 and 75 added
+# Whatever code causes an exception is called risk assessing code so some lines are added to the above codes
 except:
     print("Exception occurred because of File not found")
 
@@ -121,12 +122,12 @@ else:
 Output is
 ['File\n', 'Handling\n', 'Session\n']
 
-By changing code line 115 from 'abc.txt' to 'abcd.txt' to verify output if a file doesn't exist
+By changing code line 116 from 'abc.txt' to 'abcd.txt' to verify output if a file doesn't exist
 Output is
 File isn't available
 '''
 
-# Simple Operation on How Access a Binary Data
+# Simple Operation on How to Access a Binary Data
 
 # f1 = open(r"C:/Users/olakoya/Desktop/download.jpeg","rb")
 f1 = open("/Users/olakoya/Desktop/download.jpeg", "rb")
