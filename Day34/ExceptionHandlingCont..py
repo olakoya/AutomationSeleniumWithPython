@@ -6,32 +6,33 @@ Most common errors are;
 2. Runtime Error ==> Exceptional Error
 
 How to Handle the Errors are
+-----------------------------
 1. Try Block
 2. Except Block
 
-Based on the 2 handling Errors above, it's important thing to know the below for the Errors;
+Based on the 2 handling Errors above, it's important to know the below for the Errors;
 !. Any code which causes exception is called a Risky code
     The risky code can be placed/kept inside the Try block
-2. If exception handling code specify except block
+2. This is if exception handling code specify except block
 E.g
 '''
 print("this is the starting of the program")
 try: # when try block is used "except" block is use as a default
-    # print(x) # accessing variable and a line block of risky code
+    print(x) # accessing variable and a line block of risky code
     print(10 / 0)
 except:
     print("Exception occurred")
 print("this is the end of the program")
 '''
 Output is 
-line 19, in <module>
+line 21, in <module>
     print(x) # accessing variable
 NameError: name 'x' is not defined (and)
 this is the starting of the program
 
 (The statement after an error can't be executed hence executing only line 18)
 
-Output after adding lines 19, 21, 22
+Output after adding lines 22 to 25
 
 this is the starting of the program
 Exception occurred
@@ -41,11 +42,11 @@ E.g 2
 print(10/0)
 '''
 Output is
-line 40, in <module>
+line 42, in <module>
     print(10/0)
 ZeroDivisionError: division by zero
 
-Moving line 40 to line 21
+Moving line 42 to line 22
 
 Output gives
 
@@ -69,7 +70,7 @@ Enter 2nd Number: 20
 
 Enter 1st Number: 15
 Enter 2nd Number: 0
-line 60, in <module>
+line 61, in <module>
     print(x/y)
 ZeroDivisionError: division by zero
 
@@ -168,8 +169,8 @@ Enter 2nd Number: 3
 Aside from 'try' and 'except' blocks, blocks that can also be used are;
 iii. finally which is always ==> executed. 
         finally is also use as a clean up code
-    Example is that after automating a testingfile case that requires the database and after automation database is disconnected that's
-    what is called clean up code
+    Example is that after automating a testingfile case that requires the database and after automation database is disconnected 
+    that's what is called clean up code
 iv. else which is when no exceptions ==> occurred
 
 E.g
@@ -185,7 +186,7 @@ Output is for 10/0
 Exception Occur
 Always executed
 
-changing code line 174 from 10/0 to 10/2
+changing code line 179 from 10/0 to 10/2
 Output is
 5.0
 Always executed
@@ -206,7 +207,7 @@ Output is
 No exceptions Occurred
 Always Executed
 
-But switching code line 192 from 10/2 to 10/0
+But switching code line 197 from 10/2 to 10/0
 Output is 
 Exception Occur
 Always Executed

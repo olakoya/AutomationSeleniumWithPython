@@ -29,11 +29,11 @@ After correcting errors then codes will be executed
 # Examples of SyntaxError
 # -------------------------
 x = 10
-# if x ==10
-#     print("Hello")
+if x ==10
+    print("Hello")
 '''
 Output is
-line 31
+line 32
     if x ==10
              ^
 SyntaxError: invalid syntax
@@ -48,21 +48,24 @@ if x ==10:
 Output is
 Hello
 '''
+
 # Example 2
-# print "Ola"
+print "Ola"
 '''
 Output is 
-line 51
+line 53
     print "Ola"
           ^
 SyntaxError: Missing parentheses in call to 'print'. Did you mean print("Ola")?
 '''
+
 # Corrected Version
 print("Ola")
 '''
 Output is
 Ola
 '''
+
 # Examples of Runtime Errors
 # ---------------------------
 # 1
@@ -71,22 +74,25 @@ print(10/2)
 Output ia
 5.0
 '''
+
 # 2
 print(10/0)
 '''
 Output is
-line 76, in <module>
+line 79, in <module>
     print(10/0)
 ZeroDivisionError: division by zero
 '''
+
 # 3
 print(10/"ten")
 '''
 Output is
-line 85, in <module>
+line 88, in <module>
     print(10/"ten")
 TypeError: unsupported operand type(s) for /: 'int' and 'str'
 '''
+
 # 4
 # reading an input from user
 input("Enter the data = ")
@@ -94,6 +100,7 @@ input("Enter the data = ")
 Output is
 Enter the data =
 '''
+
 # 5
 # convert the string input data to integer datatype
 x = int(input("Enter the data = "))
@@ -103,12 +110,13 @@ Output is
 Enter the data = 10
 10
 '''
+
 # 6
 # entering sequence of character string. String contains character not decimal value
 '''
-Output from second execution of the above line 101 code
+Output from second execution of the above line 106 code
 Enter the data = ten
-line 101, in <module>
+line 106, in <module>
     x = int(input("Enter the data = "))
 ValueError: invalid literal for int() with base 10: 'ten'
 '''
@@ -131,6 +139,7 @@ Types of Runtime Errors
 Runtime Errors are called ==> Logical Errors or Exceptions
 All runtime or exceptions error is an object of corresponding class
 '''
+
 # How to handle this error?
 # -------------------------
 print("This is starting of the program")
@@ -143,7 +152,7 @@ print(x)
 print("This is the end of the program")
 '''
 Output is 
-line 143, in <module>
+line 150, in <module>
     print(x)
 NameError: name 'x' is not defined
 '''
