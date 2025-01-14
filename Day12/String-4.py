@@ -194,4 +194,68 @@ False
 '''
 Checking type of characters present in the string
 ----------------------------------------------------
+isalnum() ==> Returns True if all characters are alphanumeric (a to z, A to Z, 0 to 9)
+isalpha() ==> Returns True if all characters are alphabet symbols (a to z, A to Z)
+isdigit() ==> Returns True if all characters are digits only (0 to 9)
+islower() ==> Returns True if all characters are lower case alphabet symbols (a to z)
+isupper() ==> Returns True if all characters are upper case alphabet symbols (A to Z)
+istitle() ==> Returns True if string is in title case
+isspace() ==> Returns True if string contains only spaces
+E.g
+'''
+s = "abcd123"
+print(s.isalnum())
+print(s.isalpha())
+print(s.isdigit())
+print(s.islower())
+print(s.isupper())
+print(s.istitle())
+print(s.isspace())
+'''
+Output is
+True
+False
+False
+True
+False
+False
+False
+-----------------------------------
+'''
+
+'''
+Formatting Output
+-------------------
+name = "Nandini"
+name = "Shyla"
+salary = "$25k"
+salary = "25kinr"
+country = "US"
+country = "India"
+E.g
+'''
+name = "Ola"
+salary = "70000"
+age = "47"
+
+print(f"{name} 's salary is {salary} and his age ia {age} ") # f strings is used to format output without information
+'''
+Output is 
+Ola 's salary is 70000 and his age ia 47 
+'''
+# E.g 2
+print("{}'s salary is {} and his age ia {}" .format(name, salary, age))
+'''
+Output is 
+Ola's salary is 70000 and his age ia 47
+'''
+# E.g 3
+print("{}'s salary is {} and his age ia {}" .format(salary, age, name))
+'''
+Output is
+70000's salary is 47 and his age ia Ola
+Not meaningful
+
+
+Method one in line 241 is best option code to use
 '''
