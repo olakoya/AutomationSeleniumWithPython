@@ -12,6 +12,7 @@ E.g x = 10, 'a', 'python', 10+i10 the variables are separated with commas
 - List supports indexing
 E.g
 '''
+from gc import is_finalized
 
 # Creating a List
 # x = [] # empty list i.e. unknown list
@@ -206,22 +207,28 @@ E.g y = [10,20,30,40]
 E.g
 '''
 # Aliasing
-#  y = [10, 20, 30, 40]
-#  x = y
-#  print(y)
-#  print(x)
-#  y[3] = 100
-#  print(y)
-#  print(x)
-
-y = [10, 20, 30, 40]
-x = y
-print("y:", y)
-print("x:", x)
-y[3] = 100
-print("After modifying y:")
-print("y:", y)
-print("x:", x)
+# y = [10, 20, 30, 40]
+# x = y
+# print(y)
+# print(x)
+# y[3] = 100
+# print(y)
+# print(x)
+'''
+Output is
+[10, 20, 30, 40]
+[10, 20, 30, 40]
+[10, 20, 30, 100]
+[10, 20, 30, 100]
+'''
+# y = [10, 20, 30, 40]
+# x = y
+# print("y:", y)
+# print("x:", x)
+# y[3] = 100
+# print("After modifying y:")
+# print("y:", y)
+# print("x:", x)
 '''
 Output is
 y: [10, 20, 30, 40]
@@ -229,4 +236,106 @@ x: [10, 20, 30, 40]
 After modifying y:
 y: [10, 20, 30, 100]
 x: [10, 20, 30, 100]
+'''
+
+'''
+Cloning of List Objects
+-------------------------
+The process of creating exactly duplicate independent object is called cloning.
+We can implement cloning by using slice operator or by using copy() function
+E.g
+'''
+# # Cloning --- Slicing
+# y = [10, 20, 30, 40]
+# x = y[::]
+# print(y)
+# print(x)
+# y[3] = 100
+# print(y)
+# print(x)
+'''
+Output is
+[10, 20, 30, 40]
+[10, 20, 30, 40]
+[10, 20, 30, 100]
+[10, 20, 30, 40]
+'''
+# y = [10, 20, 30, 40]
+# x = y[::]  # cloning using slicing
+# print("y:", y)
+# print("x:", x)
+# y[3] = 100
+# print("y:", y)
+# print("x:", x)
+'''
+Output is
+y: [10, 20, 30, 40]
+x: [10, 20, 30, 40]
+y: [10, 20, 30, 100]
+x: [10, 20, 30, 40]
+'''
+
+# Cloning --- Copying
+# y = [10, 20, 30, 40]
+# x = y.copy()
+# print(y)
+# print(x)
+# y[3] = 100
+# print(y)
+# print(x)
+'''
+Output is
+[10, 20, 30, 40]
+[10, 20, 30, 40]
+[10, 20, 30, 100]
+[10, 20, 30, 40]
+'''
+
+# Operators on List
+# Concatenation and Repetition
+# a = [1,2,3]
+# b = [4,5,6]
+#
+# print(a+b)
+# print(a*4)
+# print(b*3)
+'''
+Output is
+[1, 2, 3, 4, 5, 6]
+[1, 2, 3, 1, 2, 3, 1, 2, 3, 1, 2, 3]
+[4, 5, 6, 4, 5, 6, 4, 5, 6]
+'''
+
+# Membership Operators
+a = [1,2,3]
+print('c' in a)
+print('c' is not a)
+'''
+Output is
+False
+True
+'''
+
+'''
+List Comprehension
+-------------------
+Easy and compact way if creating a list data structure from another sequence like list, tuple, dictionary, set, string.
+
+Syntax
+-------
+    [expression for ele in sequence if condition]
+E.g
+'''
+y = [x*x for x in range(1,11) if x%2] # for loop sequence-range(1,11) and expression-x*x
+print(y)
+'''
+Output is
+[1, 9, 25, 49, 81]
+'''
+
+y = [x*x for x in range(1,11) if x%2==0] # for loop sequence-range(1,11) and expression-x*x
+print(y)
+'''
+Output is
+[4, 16, 36, 64, 100]
 '''
