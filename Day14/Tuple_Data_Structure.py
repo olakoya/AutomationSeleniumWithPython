@@ -137,18 +137,49 @@ Output is
 '''
 
 # Functions on Tuple
-s = (10,20,30,40,50,20)
-print(len(s))
+# s = (10,20,30,40,50,20)
+# print(len(s))
 '''
 Output is 
 6
 '''
-print(s.count(20))
-print(s.index(30))
-print(sorted(s))
+# print(s.count(20))
+# print(s.index(30))
+# print(sorted(s))
 '''
 Output is
 2
 2
 [10, 20, 20, 30, 40, 50]
+'''
+
+'''
+Tuple Packing and Unpacking
+----------------------------
+- Tuple packing is the process of combining multiple values into a single tuple in a single statement.
+- Tuple unpacking is the process of assigning the values from a tuple to multiple variables in a single statement.
+- Tuple unpacking is the reverse process of Tuple packing.
+Note: During tuple unpacking, the number of variables must watch match the number of values otherwise, a ValueError will occur.
+
+E.g
+'''
+a = 10
+b = 20
+
+# t = a,b
+# print(t)
+'''
+Output is
+(10, 20)
+'''
+t = 10,20,30
+a,b,c = t
+
+print(a)
+print(b)
+print(c)
+'''
+10
+20
+30
 '''
