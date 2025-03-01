@@ -172,14 +172,32 @@ b = 20
 Output is
 (10, 20)
 '''
-t = 10,20,30
-a,b,c = t
+# t = 10,20,30
+# a,b,c = t
 
-print(a)
-print(b)
-print(c)
+# print(a)
+# print(b)
+# print(c)
 '''
 10
 20
 30
 '''
+
+'''
+Tuple comprehension is not supported in Python except Tuple Data Structure.
+
+Difference between List and Tuple
+-----------------------------------
+List and Tuple are exactly the same except small difference: List objects are mutable whereas Tuple objects are immutable.
+In both cases insertion order is preserved, duplicate objects are allowed, heterogenous objects are allowed, index and slicing 
+are supported.
+E.g
+'''
+t = 10,20,30
+print(t)
+'''
+Output is 
+(10, 20, 30)
+'''
+
